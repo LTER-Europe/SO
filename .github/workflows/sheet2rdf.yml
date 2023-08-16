@@ -48,6 +48,7 @@ jobs:
         env:
           FILE_NAME: ${{secrets.FILE_NAME}}
         run: |
+          rm -f xls2rdf.jar
           git add .
           git diff-index --quiet HEAD || git commit -m "New .ttl from Google sheet has been generated"
           git push
