@@ -1,0 +1,53 @@
+# This file has been modified from its originally licensed version
+# by WillOnGit - see README.md at repository root for licence
+name: "Gsheet to RDF TTL"
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+jobs:
+  sheet2rdf:
+    name: Sheet2RDF
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: true
+          python-version: "3.11"
+
+      - name: prepare
+        shell: bash -l {0}
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          conda create -n sheet2rdf python=3.11 pandas
+          conda activate sheet2rdf
+          pip install gsheets
+          curl -L https://github.com/sparna-git/xls2rdf/releases/download/2.1.1/xls2rdf-app-2.1.1-onejar.jar -o xls2rdf.jar
+
+      - name: fetch
+        shell: bash -l {0}
+        env:
+          CLIENT: ${{secrets.CLIENT}}
+          STORAGE: ${{secrets.STORAGE}}
+          FILE_NAME: ${{secrets.FILE_NAME}}
+          SHEET_ID: ${{secrets.SHEET_ID}}
+        run: |
+          conda activate sheet2rdf
+          python ./workflow/sheet2xls.py
+
+      - name: conversion-xls2rdf
+        env:
+          FILE_NAME: ${{secrets.FILE_NAME}}
+        run: |
+          java -jar xls2rdf.jar convert -i $FILE_NAME.xlsx -o $FILE_NAME.ttl -l en
+          mv xls2rdf.log ./logs/
+
+      - name: commit-artifacts
+        env:
+          FILE_NAME: ${{secrets.FILE_NAME}}
+        run: |
+          git add .
+          git diff-index --quiet HEAD || git commit -m "New .ttl from Google sheet has been generated"
+          git push
