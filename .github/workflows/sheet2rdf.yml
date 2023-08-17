@@ -24,7 +24,6 @@ jobs:
           conda create -n sheet2rdf python=3.11 pandas openpyxl
           conda activate sheet2rdf
           pip install gsheets
-          curl -L https://github.com/sparna-git/xls2rdf/releases/download/2.1.1/xls2rdf-app-2.1.1-onejar.jar -o xls2rdf.jar
 
       - name: fetch
         shell: bash -l {0}
@@ -41,14 +40,20 @@ jobs:
         env:
           FILE_NAME: ${{secrets.FILE_NAME}}
         run: |
+          curl -L https://github.com/sparna-git/xls2rdf/releases/download/2.1.1/xls2rdf-app-2.1.1-onejar.jar -o xls2rdf.jar
           java -jar xls2rdf.jar convert -i $FILE_NAME.xlsx -o $FILE_NAME.ttl -l en
           mv xls2rdf.log ./logs/
+          rm -f xls2rdf.jar
 
       - name: commit-artifacts
-        env:
-          FILE_NAME: ${{secrets.FILE_NAME}}
         run: |
-          rm -f xls2rdf.jar
           git add .
           git diff-index --quiet HEAD || git commit -m "New .ttl from Google sheet has been generated"
           git push
+
+      - name: publish-rdf
+        env:
+          SKOSMOS_CREDENTIALS: ${{secrets.SKOSMOS_CREDENTIALS}}
+          SKOSMOS_URL: ${{vars.SKOSMOS_URL}}
+        run: |
+          workflow/publish.sh

@@ -1,0 +1,4 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vocab: <https://vocabs.lter-europe.net/so/>
+INSERT {GRAPH vocab: {?x skos:narrower ?y}}
+WHERE {GRAPH vocab: {?y skos:broader ?x}}
