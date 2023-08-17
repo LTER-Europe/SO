@@ -8,8 +8,7 @@ PREFIX,iop,https://w3id.org/iadopt/ont/
 PREFIX,puv,https://w3id.org/env/puv#
 PREFIX,sosa,http://www.w3.org/ns/sosa/
 PREFIX,obo,http://purl.obolibrary.org/obo/
-PREFIX,et,"
-http://vocabs.lter-europe.net/EnvThes/",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2023-07-27
+PREFIX,et,http://vocabs.lter-europe.net/EnvThes/
 PREFIX,qudt,http://qudt.org/vocab/
 skos:prefLabel,eLTER SOs
 dct:title,eLTER Standard Observations
@@ -22,95 +21,64 @@ pav:createdOn,2023-08-16T11:00:00+00:00
 pav:lastUpdatedOn,2023-08-16T11:00:00+00:00
 
 
-Identifier,skos:prefLabel@en,rdf:type,skos:notation,rdf:type,skos:definition@en,"dct:source(separator="","")","
+Identifier,skos:prefLabel@en,rdf:type,skos:notation,skos:inScheme,skos:definition@en,"dct:source(separator="","")","
 ^skos:member","skos:exactMatch(separator="","")",dct:isReplacedBy,"skos:closeMatch(separator="","")","skos:narrowMatch(separator="","")","skos:related(separator="","")","obo:RO_0002351(separator="","")","skos:broadMatch(separator="","")","owl:sameAs(separator="","")",rdfs:seeAlso,dct:contributor,dct:created^^xsd:date,dct:creator,dct:modified^^xsd:date
-:027,Meteorological data,,SOATM_027,iop:VariableSet,,,so:c5
-:028,Radiation,,SOATM_028,iop:VariableSet,,,so:c5
-:098,Ground heat flux,,SOATM_098,iop:VariableSet,,,so:c5
-:103,Atmospheric deposition in precipitation,,SOATM_103,iop:VariableSet,,,so:c5
-:108,Dry deposition of N-components,,SOATM_108,iop:VariableSet,,,so:c5
-:176,"CO2 flux and concentration, Latent heat flux, Sensible heat flux - Eddy Covariance",,SOATM_176,iop:VariableSet,,,so:c5
-:014,Flying insects,,SOBIO_014,iop:VariableSet,,,so:c4
-:015,Vegetation phenology and Leaf Area Index – European scale,,SOBIO_015,iop:VariableSet,,,so:c5
-:016,Vegetation phenology – site scale,,SOBIO_016,iop:VariableSet,,,so:c5
-:017,Vegetation composition (mainly species level+abundance),,SOBIO_017,iop:VariableSet,,,so:c4
-:018,"Birds, bats, frogs, insects using acoustic recording",,SOBIO_018,iop:VariableSet,,,so:c4
-:019,Pollen and spores,,SOBIO_019,iop:VariableSet,,,so:c4
-:021,eDNA Water,,SOBIO_021,iop:VariableSet,,,so:c4
-:022,eDNA soil,,SOBIO_022,iop:VariableSet,,,so:c4
-:023,Vegetation aboveground biomass - forest (site scale),,SOBIO_023,iop:VariableSet,,,so:c5
-:024,Vegetation aboveground biomass – non-forested sites,,SOBIO_024,iop:VariableSet,,,so:c5
-:025,Leaf area index - forests (site scale),,SOBIO_025,iop:VariableSet,,,so:c5
-:026,Leaf area index – non-forested sites,,SOBIO_026,iop:VariableSet,,,so:c5
-:090,Gross primary production,,SOBIO_090,iop:VariableSet,,,so:c5
-:091,Transpiration (plants),,SOBIO_091,iop:VariableSet,,,so:c5
-:092,Aboveground litterfall - forests,,SOBIO_092,iop:VariableSet,,,so:c5
-:093,Belowground biomass - terrestrial,,SOBIO_093,iop:VariableSet,,,so:c5
-:095,"Leaf C, N, K, P, Ca, Mg, Mn content - terrestrial",,SOBIO_095,iop:VariableSet,,,so:c5
-:096,"Clorophyll a (benthic, pelagic) - standing, running waters",,SOBIO_096,iop:VariableSet,,,so:c4
-:140,Vegetation structure - site scale,,SOBIO_140,iop:VariableSet,,,so:c5
-:177,Tree growth,,SOBIO_177,iop:VariableSet,,,so:c5
-:003,Soil chemical and physical characteristics,,SOGEO_003,iop:VariableSet,,,so:c2
-:048,Percolation/infiltration - soil,,SOGEO_048,iop:VariableSet,,,so:c2
-:155,Sediment (aquatic and marine) inventory,,SOGEO_155,iop:VariableSet,,,so:c2
-:167,Soil water chemical characteristics,,SOGEO_167,iop:VariableSet,,,so:c2
-:004,Profiles of physical and chemical waters characteristics - surface water (standing),,SOHYD_004,iop:VariableSet,,,so:c3
-:005,Physical and chemical water characteristics - surface water (running waters),,SOHYD_005,iop:VariableSet,,,so:c3
-:006,Physical and chemical water characteristics - groundwater,,SOHYD_006,iop:VariableSet,,,so:c3
-:010,Water level - surface water (running water),,SOHYD_010,iop:VariableSet,,,so:c3
-:011,Ice cover/thickness (standing and transitional water),,SOHYD_011,iop:VariableSet,,,so:c3
-:012,Snow cover and depths,,SOHYD_012,iop:VariableSet,,,so:c3
-:058,"Stable isotopes (18O, 2H) - standing, running waters",,SOHYD_058,iop:VariableSet,,,so:c3
-:059,"Stable Isotopes (18O, 2H) - groundwater",,SOHYD_059,iop:VariableSet,,,so:c3
-:062,"Major ion concentrations: Cl, SO4, Br, Na, K, Mg, Ca, B - groundwater",,SOHYD_062,iop:VariableSet,,,so:c3
-:064,"Nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4, DOC, DIC - groundwater",,SOHYD_064,iop:VariableSet,,,so:c3
-:065,DOM composition - groundwater,,SOHYD_065,iop:VariableSet,,,so:c3
-:067,Micropollutants: non-target screening [~1000 substances] - running waters,,SOHYD_067,iop:VariableSet,,,so:c3
-:164,Glacier front variation,,SOHYD_164,iop:VariableSet,,,so:c3
-:165,Glacier mass balance,,SOHYD_165,iop:VariableSet,,,so:c3
-:166,Glacier area,,SOHYD_166,iop:VariableSet,,,so:c3
-:168,Soil water content/soil temperature,,SOHYD_168,iop:VariableSet,,,so:c3
-:169,"Nutrient concentration: NO2, NH4, DOC, DIC - running waters",,SOHYD_169,iop:VariableSet,,,so:c3
-:170,"Profiles of nutrient concentration: NO2, NH4, DOC, DIC - standing waters",,SOHYD_170,iop:VariableSet,,,so:c3
-:171,"Major ion concentrations: Cl, SO4, Br, Na, K, Mg, Ca, B, Silica - inland running/standing waters, transitional waters",,SOHYD_171,iop:VariableSet,,,so:c3
-:172,"Nutrient concentration: TP, SRP, TDN, NO3 - running waters",,SOHYD_172,iop:VariableSet,,,so:c4
-:173,"Profiles of nutrient concentration: TP, SRP, TDN, NO3, - standing waters",,SOHYD_173,iop:VariableSet,,,so:c4
-:174,Secchi-Depth; standing waters and transitional waters,,SOHYD_174,iop:VariableSet,,,so:c3
-:029,Area under tillage - cropland,,SOSOC_029,iop:VariableSet,,,so:c3
-:030,Land-based income - cropland and forests,,SOSOC_030,iop:VariableSet,,,so:c1
-:031,"Yield – cropland, forests, fishery",,SOSOC_031,iop:VariableSet,,,so:c1
-:032,Governance structure and character,,SOSOC_032,iop:VariableSet,,,so:c1
-:033,Stakeholder engagement process indicators,,SOSOC_033,iop:VariableSet,,,so:c1
-:034,Basic services provision: health & education,,SOSOC_034,iop:VariableSet,,,so:c1
-:036,"Land cover, land use, land cover change, land use change",,SOSOC_036,iop:VariableSet,,,so:c1
-:039,General information (DEIMS),,SOSOC_039,iop:VariableSet,,,so:c1
-:040,Ecosystem services profile,,SOSOC_040,iop:VariableSet,,,so:c1
-:041,NUTS3 and Local Administrative Units (LAU) spatial databases,,SOSOC_041,iop:VariableSet,,,so:c1
-:042,Per capita income,,SOSOC_042,iop:VariableSet,,,so:c1
-:043,Age profile- education attainment-residential profile-residential density,,SOSOC_043,iop:VariableSet,,,so:c1
-:044,Status of employment,,SOSOC_044,iop:VariableSet,,,so:c1
-:045,Population consumption statistics,,SOSOC_045,iop:VariableSet,,,so:c1
-:112,"Grazing timing, intensity - farmland",,SOSOC_112,iop:VariableSet,,,so:c1
-:113,Farm gate economic return,,SOSOC_113,iop:VariableSet,,,so:c1
-:114,Livestock (livestock units) - farmland,,SOSOC_114,iop:VariableSet,,,so:c1
-:115,"Irrigation management, timing, intensity - cropland, orchards",,SOSOC_115,iop:VariableSet,,,so:c1
-:116,"Fertilizer input (N, P, K fertilisation, liming, pesticides) - cropland, orchards",,SOSOC_116,iop:VariableSet,,,so:c1
-:118,"Relevant regional actors and initiatives (NGO's, civil society groups, etc.)",,SOSOC_118,iop:VariableSet,,,so:c1
-:120,Property ownership/laws/institutions,,SOSOC_120,iop:VariableSet,,,so:c1
-:122,Number of tourists/visitors,,SOSOC_122,iop:VariableSet,,,so:c1
-:127,"Records of important land users (e.g., forest enterprises)",,SOSOC_127,iop:VariableSet,,,so:c1
-:130,Physical infrastructure networks,,SOSOC_130,iop:VariableSet,,,so:c1
-:131,Buildings and other structures,,SOSOC_131,iop:VariableSet,,,so:c1
-:132,"Roads, railways, settlement areas",,SOSOC_132,iop:VariableSet,,,so:c1
-:147,Maritime traffic and recreational navigation,,SOSOC_147,iop:VariableSet,,,so:c1
-:149,Aquaculture,,SOSOC_149,iop:VariableSet,,,so:c1
-:150,Extraction of minerals,,SOSOC_150,iop:VariableSet,,,so:c1
-:151,Oil and gas exploitation,,SOSOC_151,iop:VariableSet,,,so:c1
-:152,Wind energy,,SOSOC_152,iop:VariableSet,,,so:c1
-:153,Protected areas,,SOSOC_153,iop:VariableSet,,,so:c1
-:001,Soil inventory - pedological/geological characterization,,SOGEO_001,iop:VariableSet,,,so:c2,,,,,,"et:22245,et:22279,et:30319,et:30321,et:30323,et:30324,et:22065,et:22264,et:30067"
-:c1,Sociosphere,skos:Collection,,,,,,et:30317
-:c2,Geosphere,skos:Collection,,,,,,et:30316
-:c3,Hydrosphere,skos:Collection,,,,,,et:21922
-:c4,Biosphere,skos:Collection,,,,,,et:21921
-:c5,Atmosphere,skos:Collection,,,,,,et:21920
+:000,Standard observations,skos:ConceptSheme,,,,,,,,,,,,,,,,2023-08-17,2023-08-17,2023-08-17,2023-08-17
+:027,Meteorological data,"skos:Concept,iop:VariableSet",SOATM_027,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-17,2023-08-17
+:028,Radiation,"skos:Concept,iop:VariableSet",SOATM_028,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:098,Ground heat flux,"skos:Concept,iop:VariableSet",SOATM_098,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:103,Atmospheric deposition in precipitation,"skos:Concept,iop:VariableSet",SOATM_103,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:108,Dry deposition of N-components,"skos:Concept,iop:VariableSet",SOATM_108,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:176,"CO2 flux and concentration, Latent heat flux, Sensible heat flux - Eddy Covariance","skos:Concept,iop:VariableSet",SOATM_176,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:014,Flying insects,"skos:Concept,iop:VariableSet",SOBIO_014,:000,,,so:c4,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:015,Vegetation phenology and Leaf Area Index – European scale,"skos:Concept,iop:VariableSet",SOBIO_015,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:016,Vegetation phenology – site scale,"skos:Concept,iop:VariableSet",SOBIO_016,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:017,Vegetation composition (mainly species level+abundance),"skos:Concept,iop:VariableSet",SOBIO_017,:000,,,so:c4,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:018,"Birds, bats, frogs, insects using acoustic recording","skos:Concept,iop:VariableSet",SOBIO_018,:000,,,so:c4,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:019,Pollen and spores,"skos:Concept,iop:VariableSet",SOBIO_019,:000,,,so:c4,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:021,eDNA Water,"skos:Concept,iop:VariableSet",SOBIO_021,:000,,,so:c4,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:022,eDNA soil,"skos:Concept,iop:VariableSet",SOBIO_022,:000,,,so:c4,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:023,Vegetation aboveground biomass - forest (site scale),"skos:Concept,iop:VariableSet",SOBIO_023,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:024,Vegetation aboveground biomass – non-forested sites,"skos:Concept,iop:VariableSet",SOBIO_024,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:025,Leaf area index - forests (site scale),"skos:Concept,iop:VariableSet",SOBIO_025,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:026,Leaf area index – non-forested sites,"skos:Concept,iop:VariableSet",SOBIO_026,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:090,Gross primary production,"skos:Concept,iop:VariableSet",SOBIO_090,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:091,Transpiration (plants),"skos:Concept,iop:VariableSet",SOBIO_091,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:092,Aboveground litterfall - forests,"skos:Concept,iop:VariableSet",SOBIO_092,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:093,Belowground biomass - terrestrial,"skos:Concept,iop:VariableSet",SOBIO_093,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:095,"Leaf C, N, K, P, Ca, Mg, Mn content - terrestrial","skos:Concept,iop:VariableSet",SOBIO_095,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:096,"Clorophyll a (benthic, pelagic) - standing, running waters","skos:Concept,iop:VariableSet",SOBIO_096,:000,,,so:c4,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:140,Vegetation structure - site scale,"skos:Concept,iop:VariableSet",SOBIO_140,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:177,Tree growth,"skos:Concept,iop:VariableSet",SOBIO_177,:000,,,so:c5,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:003,Soil chemical and physical characteristics,"skos:Concept,iop:VariableSet",SOGEO_003,:000,,,so:c2,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:048,Percolation/infiltration - soil,"skos:Concept,iop:VariableSet",SOGEO_048,:000,,,so:c2,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:155,Sediment (aquatic and marine) inventory,"skos:Concept,iop:VariableSet",SOGEO_155,:000,,,so:c2,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:167,Soil water chemical characteristics,"skos:Concept,iop:VariableSet",SOGEO_167,:000,,,so:c2,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:004,Profiles of physical and chemical waters characteristics - surface water (standing),"skos:Concept,iop:VariableSet",SOHYD_004,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:005,Physical and chemical water characteristics - surface water (running waters),"skos:Concept,iop:VariableSet",SOHYD_005,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:006,Physical and chemical water characteristics - groundwater,"skos:Concept,iop:VariableSet",SOHYD_006,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:010,Water level - surface water (running water),"skos:Concept,iop:VariableSet",SOHYD_010,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:011,Ice cover/thickness (standing and transitional water),"skos:Concept,iop:VariableSet",SOHYD_011,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:012,Snow cover and depths,"skos:Concept,iop:VariableSet",SOHYD_012,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:058,"Stable isotopes (18O, 2H) - standing, running waters","skos:Concept,iop:VariableSet",SOHYD_058,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:059,"Stable Isotopes (18O, 2H) - groundwater","skos:Concept,iop:VariableSet",SOHYD_059,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:062,"Major ion concentrations: Cl, SO4, Br, Na, K, Mg, Ca, B - groundwater","skos:Concept,iop:VariableSet",SOHYD_062,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:064,"Nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4, DOC, DIC - groundwater","skos:Concept,iop:VariableSet",SOHYD_064,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:065,DOM composition - groundwater,"skos:Concept,iop:VariableSet",SOHYD_065,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:067,Micropollutants: non-target screening [~1000 substances] - running waters,"skos:Concept,iop:VariableSet",SOHYD_067,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:164,Glacier front variation,"skos:Concept,iop:VariableSet",SOHYD_164,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:165,Glacier mass balance,"skos:Concept,iop:VariableSet",SOHYD_165,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:166,Glacier area,"skos:Concept,iop:VariableSet",SOHYD_166,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:168,Soil water content/soil temperature,"skos:Concept,iop:VariableSet",SOHYD_168,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:169,"Nutrient concentration: NO2, NH4, DOC, DIC - running waters","skos:Concept,iop:VariableSet",SOHYD_169,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:170,"Profiles of nutrient concentration: NO2, NH4, DOC, DIC - standing waters","skos:Concept,iop:VariableSet",SOHYD_170,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:171,"Major ion concentrations: Cl, SO4, Br, Na, K, Mg, Ca, B, Silica - inland running/standing waters, transitional waters","skos:Concept,iop:VariableSet",SOHYD_171,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:172,"Nutrient concentration: TP, SRP, TDN, NO3 - running waters","skos:Concept,iop:VariableSet",SOHYD_172,:000,,,so:c4,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:173,"Profiles of nutrient concentration: TP, SRP, TDN, NO3, - standing waters","skos:Concept,iop:VariableSet",SOHYD_173,:000,,,so:c4,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:174,Secchi-Depth; standing waters and transitional waters,"skos:Concept,iop:VariableSet",SOHYD_174,:000,,,so:c3,,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:001,Soil inventory - pedological/geological characterization,"skos:Concept,iop:VariableSet",SOGEO_001,:000,,,so:c2,,,,,,"et:22245,et:22279,et:30319,et:30321,et:30323,et:30324,et:22065,et:22264,et:30067",,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:c1,Sociosphere,skos:Collection,,,,,,et:30317,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:c2,Geosphere,skos:Collection,,,,,,et:30316,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:c3,Hydrosphere,skos:Collection,,,,,,et:21922,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:c4,Biosphere,skos:Collection,,,,,,et:21921,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
+:c5,Atmosphere,skos:Collection,,,,,,et:21920,,,,,,,,,0000-0003-2195-3997,2023-08-16,,2023-08-16
