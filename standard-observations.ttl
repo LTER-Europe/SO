@@ -5,6 +5,7 @@
 
 <https://vocabs.lter-europe.net/so/> a skos:ConceptScheme;
   dct:contributor <https://orcid.org/0000-0003-2195-3997>;
+  dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
   dct:description "Thesaurus for eLTER Standard Observations"@en;
   dct:rights <https://spdx.org/licenses/CC-BY-4.0>;
   dct:title "eLTER Standard Observations"@en;
