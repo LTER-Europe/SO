@@ -1,12 +1,14 @@
 # SO
-eLTER vocabulary for eLTER Standard Observations
+eLTER vocabulary for eLTER Standard Observations.
+Hosted at [vocabs.lter-europe.net](https://vocabs.lter-europe.net/so/en/).
 
 # sheet2rdf workflow
-This repository includes an automatic workflow, executed by means of Github actions, and underlying shell and python scripts which:
+The vocabulary is derived from a Google Sheet by an automatic workflow which:
 
-- Fetches a Google Sheet from Google Drive and stores it as `xlsx` and `csv` files
-- Converts the sheet to machine-actionable and FAIR RDF vocabulary using [xls2rdf](https://github.com/sparna-git/xls2rdf)
-- Commits conversion logs to this repository
+- Fetches the sheet as `xlsx` and `csv` files
+- Converts the sheet to RDF (Turtle) using [xls2rdf](https://github.com/sparna-git/xls2rdf)
+- Commits the sheet, RDF and conversion logs to this repository
+- Publishes the new RDF to the vocabulary server
 
 This workflow is an extension of [excel2rdf](https://github.com/fair-data-collective/excel2rdf-template) and is licensed under the [Apache 2.0 License](https://github.com/nikokaoja/sheet2rdf/blob/main/License.md).
 

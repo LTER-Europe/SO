@@ -1,6 +1,6 @@
 # This file has been modified from its originally licensed version
 # by WillOnGit - see README.md at repository root for licence
-name: "Gsheet to RDF TTL"
+name: "Generate and publish RDF ttl from Gsheet"
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
