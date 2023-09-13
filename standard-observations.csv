@@ -9,6 +9,8 @@ PREFIX,iop,https://w3id.org/iadopt/ont/
 PREFIX,puv,https://w3id.org/env/puv#
 PREFIX,sosa,http://www.w3.org/ns/sosa/
 PREFIX,obo,http://purl.obolibrary.org/obo/
+PREFIX,rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#,,,,,,,,,,,,,,,,,2023-08-29
+PREFIX,rdfs,http://www.w3.org/2000/01/rdf-schema#
 PREFIX,et,"
 http://vocabs.lter-europe.net/EnvThes/"
 PREFIX,qudt,http://qudt.org/vocab/
@@ -82,3 +84,4 @@ so:c2,Geosphere,,skos:Collection,,,,,et:30316,,,,,,,,,http://purl.org/np/RAjk9ru
 so:c3,Hydrosphere,,skos:Collection,,,,,et:21922,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
 so:c4,Biosphere,,skos:Collection,,,,,et:21921,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
 so:c5,Atmosphere,,skos:Collection,,,,,et:21920,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:c6,hasRelation,,owl:ObjectProperty,,,,,,,,,,,,,,,,2023-09-13,2023-09-13

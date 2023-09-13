@@ -623,3 +623,8 @@ so:c1 a skos:Collection;
   skos:exactMatch et:30317;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
   skos:prefLabel "Sociosphere"@en .
+
+so:c6 a owl:ObjectProperty;
+  dct:created "2023-09-13"^^xsd:date;
+  dct:modified "2023-09-13"^^xsd:date;
+  skos:prefLabel "hasRelation"@en .
