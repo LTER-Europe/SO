@@ -622,6 +622,7 @@ so:c1 a skos:Collection;
   dct:modified "2023-08-23"^^xsd:date;
   skos:exactMatch et:30317;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
+  skos:member et:30321;
   skos:prefLabel "Sociosphere"@en .
 
 et:30321 a skos:Concept;
