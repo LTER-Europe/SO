@@ -33,12 +33,12 @@
   pav:createdOn "2023-08-16T11:00:00+00:00"@en;
   pav:lastUpdatedOn "2023-08-16T11:00:00+00:00"@en;
   pav:version "0.0.1"@en;
-  skos:hasTopConcept so:001, so:003, so:004, so:005, so:006, so:010, so:011, so:012,
-    so:014, so:015, so:016, so:017, so:018, so:019, so:021, so:022, so:023, so:024, so:025,
-    so:026, so:027, so:028, so:048, so:058, so:059, so:062, so:064, so:065, so:067, so:090,
-    so:091, so:092, so:093, so:095, so:096, so:098, so:103, so:108, so:140, so:155, so:164,
-    so:165, so:166, so:167, so:168, so:169, so:170, so:171, so:172, so:173, so:174, so:176,
-    so:177;
+  skos:hasTopConcept et:30321, so:001, so:003, so:004, so:005, so:006, so:010, so:011,
+    so:012, so:014, so:015, so:016, so:017, so:018, so:019, so:021, so:022, so:023, so:024,
+    so:025, so:026, so:027, so:028, so:048, so:058, so:059, so:062, so:064, so:065, so:067,
+    so:090, so:091, so:092, so:093, so:095, so:096, so:098, so:103, so:108, so:140, so:155,
+    so:164, so:165, so:166, so:167, so:168, so:169, so:170, so:171, so:172, so:173, so:174,
+    so:176, so:177;
   skos:prefLabel "eLTER SOs"@en .
 
 so:027 a skos:Concept, iop:VariableSet;
@@ -624,7 +624,8 @@ so:c1 a skos:Collection;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
   skos:prefLabel "Sociosphere"@en .
 
-so:c6 a owl:ObjectProperty;
-  dct:created "2023-09-13"^^xsd:date;
-  dct:modified "2023-09-13"^^xsd:date;
-  skos:prefLabel "hasRelation"@en .
+et:30321 a skos:Concept;
+  dct:created "2023-09-27"^^xsd:date;
+  dct:modified "2023-09-27"^^xsd:date;
+  skos:inScheme <https://vocabs.lter-europe.net/so/>;
+  skos:topConceptOf <https://vocabs.lter-europe.net/so/> .
