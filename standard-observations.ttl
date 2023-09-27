@@ -629,4 +629,5 @@ et:30321 a skos:Concept;
   dct:created "2023-09-27"^^xsd:date;
   dct:modified "2023-09-27"^^xsd:date;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
+  skos:prefLabel "amount of organic matter"@en;
   skos:topConceptOf <https://vocabs.lter-europe.net/so/> .
