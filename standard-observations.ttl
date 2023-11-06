@@ -12,7 +12,6 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix puv: <https://w3id.org/env/puv#> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
-@prefix qudt: <http://qudt.org/vocab/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
@@ -24,15 +23,25 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://vocabs.lter-europe.net/so/> dct:contributor <https://orcid.org/0000-0003-2195-3997>;
+<https://vocabs.lter-europe.net/so/> <doap:repository> <https://ecoportal.lifewatch.eu/ontologies/>;
+  dct:audience schema:Researcher;
+  dct:contributor <https://ror.org/00pggkr55>;
+  dct:created "2023-08-16T11:00:00+00:00"@en;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
   dct:description "Thesaurus for eLTER Standard Observations"@en;
-  dct:rights <https://spdx.org/licenses/CC-BY-4.0>;
+  dct:language "en"@en;
+  dct:license <https://creativecommons.org/licenses/by/4.0/>;
+  dct:modified "2023-08-16T11:00:00+00:00"@en;
+  dct:publisher <https://ror.org/00pggkr55>;
   dct:title "eLTER Standard Observations"@en;
-  pav:createdOn "2023-08-16T11:00:00+00:00"@en;
-  pav:lastUpdatedOn "2023-08-16T11:00:00+00:00"@en;
-  pav:version "0.0.1"@en;
-  skos:prefLabel "eLTER SOs"@en .
+  schema:includedInDataCatalog <https://ecoportal.lifewatch.eu/ontologies/>, <https://vocabs.lter-europe.net/en/>;
+  owl:ontolgoyIRI <https://vocabs.lter-europe.net/so/>;
+  owl:versionInfo "0.0.1"@en;
+  skos:prefLabel "eLTER SOs"@en;
+  <omv:acronym> "SO"@en;
+  <omv:keywords> et:21672;
+  <omv:knownUsage> "annotation of observation data"@en;
+  <omv:resourceLocator> <https://raw.githubusercontent.com/LTER-Europe/SO/main/standard-observations.ttl> .
 
 so:027 a iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0003-2195-3997>;
@@ -510,3 +519,5 @@ so:c1 a skos:Collection;
   skos:exactMatch et:30317;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
   skos:prefLabel "Sociosphere"@en .
+<http://vocabs.lter-europe.net/so/>
+	 rdf:type owl:Ontology .

@@ -13,17 +13,27 @@ PREFIX,rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#,,,,,,,,,,,,,,,,,2023-08-2
 PREFIX,rdfs,http://www.w3.org/2000/01/rdf-schema#
 PREFIX,et,"
 http://vocabs.lter-europe.net/EnvThes/"
-PREFIX,qudt,http://qudt.org/vocab/
+PREFIX,,http://qudt.org/vocab/
 skos:prefLabel,eLTER SOs
 dct:title,eLTER Standard Observations
 dct:description,Thesaurus for eLTER Standard Observations
 dct:creator,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A
-dct:contributor,https://orcid.org/0000-0003-2195-3997
-dct:rights,https://spdx.org/licenses/CC-BY-4.0
-pav:version,0.0.1
-pav:createdOn,2023-08-16T11:00:00+00:00
-pav:lastUpdatedOn,2023-08-16T11:00:00+00:00
-
+dct:contributor,https://ror.org/00pggkr55
+dct:license,https://creativecommons.org/licenses/by/4.0/,,,,,,,,,,,,,,,,,,2023-11-06
+owl:versionInfo,0.0.1,,,,,,,,,,,,,,,,,,2023-11-06
+dct:created,2023-08-16T11:00:00+00:00,,,,,,,,,,,,,,,,,,2023-11-06
+dct:modified,2023-08-16T11:00:00+00:00
+owl:ontolgoyIRI,https://vocabs.lter-europe.net/so/,,,,,,,,,,,,,,,,,,2023-11-06
+omv:acronym,SO,,,,,,,,,,,,,,,,,,,2023-11-06
+omv:resourceLocator,https://raw.githubusercontent.com/LTER-Europe/SO/main/standard-observations.ttl,,,,,,,,,,,,,,,,,,,2023-11-06
+omv:keywords,http://vocabs.lter-europe.net/EnvThes/21672,,,,,,,,,,,,,,,,,,,2023-11-06
+dct:publisher,https://ror.org/00pggkr55,,,,,,,,,,,,,,,,,,,2023-11-06
+omv:knownUsage,annotation of observation data,,,,,,,,,,,,,,,,,,,2023-11-06
+dct:audience,http://schema.org/Researcher,,,,,,,,,,,,,,,,,,,2023-11-06
+doap:repository,https://ecoportal.lifewatch.eu/ontologies/,,,,,,,,,,,,,,,,,,,2023-11-06
+schema:includedInDataCatalog,https://ecoportal.lifewatch.eu/ontologies/,,,,,,,,,,,,,,,,,,,2023-11-06
+dct:language,en,,,,,,,,,,,,,,,,,,2023-11-06,2023-11-06
+schema:includedInDataCatalog,https://vocabs.lter-europe.net/en/,,,,,,,,,,,,,,,,,,2023-11-06,2023-11-06
 
 Identifier,skos:prefLabel@en,skos:notation,rdf:type,skos:definition@en,"skos:broader(separator="","")","dct:source(separator="","")",^skos:member,"skos:exactMatch(separator="","")",dct:isReplacedBy,"skos:closeMatch(separator="","")","skos:narrowMatch(separator="","")","skos:related(separator="","")","obo:RO_0002351(separator="","")","skos:broadMatch(separator="","")","owl:sameAs(separator="","")",rdfs:seeAlso,dct:creator,dct:contributor,dct:created^^xsd:date,dct:modified^^xsd:date
 so:027,Meteorological data,SOATM_027,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-09-27
