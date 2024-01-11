@@ -1,29 +1,29 @@
-ConceptScheme URI,https://vocabs.lter-europe.net/so/
-PREFIX,so,https://vocabs.lter-europe.net/so/
-PREFIX,pav,http://purl.org/pav/
-PREFIX,dct,http://purl.org/dc/terms/
-PREFIX,owl,http://www.w3.org/2002/07/owl#
-PREFIX,xsd,http://www.w3.org/2001/XMLSchema#
-PREFIX,skos,http://www.w3.org/2004/02/skos/core#
-PREFIX,iop,https://w3id.org/iadopt/ont/
-PREFIX,puv,https://w3id.org/env/puv#
-PREFIX,sosa,http://www.w3.org/ns/sosa/
-PREFIX,obo,http://purl.obolibrary.org/obo/
-PREFIX,rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#,,,,,,,,,,,,,,,,,2023-08-29
-PREFIX,rdfs,http://www.w3.org/2000/01/rdf-schema#
+ConceptScheme URI,https://vocabs.lter-europe.net/so/,,,,,,,,,,,,,,,,,,,
+PREFIX,so,https://vocabs.lter-europe.net/so/,,,,,,,,,,,,,,,,,,
+PREFIX,pav,http://purl.org/pav/,,,,,,,,,,,,,,,,,,
+PREFIX,dct,http://purl.org/dc/terms/,,,,,,,,,,,,,,,,,,
+PREFIX,owl,http://www.w3.org/2002/07/owl#,,,,,,,,,,,,,,,,,,
+PREFIX,xsd,http://www.w3.org/2001/XMLSchema#,,,,,,,,,,,,,,,,,,
+PREFIX,skos,http://www.w3.org/2004/02/skos/core#,,,,,,,,,,,,,,,,,,
+PREFIX,iop,https://w3id.org/iadopt/ont/,,,,,,,,,,,,,,,,,,
+PREFIX,puv,https://w3id.org/env/puv#,,,,,,,,,,,,,,,,,,
+PREFIX,sosa,http://www.w3.org/ns/sosa/,,,,,,,,,,,,,,,,,,
+PREFIX,obo,http://purl.obolibrary.org/obo/,,,,,,,,,,,,,,,,,,
+PREFIX,rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#,,,,,,,,,,,,,,,,,2023-08-29,
+PREFIX,rdfs,http://www.w3.org/2000/01/rdf-schema#,,,,,,,,,,,,,,,,,,
 PREFIX,et,"
-http://vocabs.lter-europe.net/EnvThes/"
-PREFIX,,http://qudt.org/vocab/
-skos:prefLabel,eLTER SOs
-dct:title,eLTER Standard Observations
-dct:description,Thesaurus for eLTER Standard Observations
-dct:creator,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A
-dct:contributor,https://ror.org/00pggkr55
-dct:license,https://creativecommons.org/licenses/by/4.0/,,,,,,,,,,,,,,,,,,2023-11-06
-owl:versionInfo,0.0.1,,,,,,,,,,,,,,,,,,2023-11-06
-dct:created,2023-08-16T11:00:00+00:00,,,,,,,,,,,,,,,,,,2023-11-06
-dct:modified,2023-08-16T11:00:00+00:00
-owl:ontolgoyIRI,https://vocabs.lter-europe.net/so/,,,,,,,,,,,,,,,,,,2023-11-06
+http://vocabs.lter-europe.net/EnvThes/",,,,,,,,,,,,,,,,,,
+PREFIX,,http://qudt.org/vocab/,,,,,,,,,,,,,,,,,,
+skos:prefLabel,eLTER SOs,,,,,,,,,,,,,,,,,,,
+dct:title,eLTER Standard Observations,,,,,,,,,,,,,,,,,,,
+dct:description,Thesaurus for eLTER Standard Observations,,,,,,,,,,,,,,,,,,,
+dct:creator,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,,,,,,,,,,,,,,,,,,,
+dct:contributor,https://ror.org/00pggkr55,,,,,,,,,,,,,,,,,,,
+dct:license,https://creativecommons.org/licenses/by/4.0/,,,,,,,,,,,,,,,,,,2023-11-06,
+owl:versionInfo,0.0.1,,,,,,,,,,,,,,,,,,2023-11-06,
+dct:created,2023-08-16T11:00:00+00:00,,,,,,,,,,,,,,,,,,2023-11-06,
+dct:modified,2023-08-16T11:00:00+00:00,,,,,,,,,,,,,,,,,,,
+owl:ontolgoyIRI,https://vocabs.lter-europe.net/so/,,,,,,,,,,,,,,,,,,2023-11-06,
 omv:acronym,SO,,,,,,,,,,,,,,,,,,,2023-11-06
 omv:resourceLocator,https://raw.githubusercontent.com/LTER-Europe/SO/main/standard-observations.ttl,,,,,,,,,,,,,,,,,,,2023-11-06
 omv:keywords,http://vocabs.lter-europe.net/EnvThes/21672,,,,,,,,,,,,,,,,,,,2023-11-06
@@ -34,7 +34,7 @@ doap:repository,https://ecoportal.lifewatch.eu/ontologies/,,,,,,,,,,,,,,,,,,,202
 schema:includedInDataCatalog,https://ecoportal.lifewatch.eu/ontologies/,,,,,,,,,,,,,,,,,,,2023-11-06
 dct:language,en,,,,,,,,,,,,,,,,,,2023-11-06,2023-11-06
 schema:includedInDataCatalog,https://vocabs.lter-europe.net/en/,,,,,,,,,,,,,,,,,,2023-11-06,2023-11-06
-
+,,,,,,,,,,,,,,,,,,,,
 Identifier,skos:prefLabel@en,skos:notation,"rdf:type(separator="","")",skos:definition@en,"skos:broader(separator="","")","dct:source(separator="","")",^skos:member,"skos:exactMatch(separator="","")",dct:isReplacedBy,"skos:closeMatch(separator="","")","skos:narrowMatch(separator="","")","skos:related(separator="","")","obo:RO_0002351(separator="","")","skos:broadMatch(separator="","")","owl:sameAs(separator="","")",rdfs:seeAlso,dct:creator,dct:contributor,dct:created^^xsd:date,2024-01-05
 so:027,Meteorological data,SOATM_027,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-09-27
 so:028,Radiation,SOATM_028,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-26
@@ -88,7 +88,7 @@ so:171,"Major ion concentrations: Cl, SO4, Br, Na, K, Mg, Ca, B, Silica - inland
 so:172,"Nutrient concentration: TP, SRP, TDN, NO3 - running waters",SOHYD_172,iop:VariableSet,,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
 so:173,"Profiles of nutrient concentration: TP, SRP, TDN, NO3, - standing waters",SOHYD_173,iop:VariableSet,,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
 so:174,Secchi-Depth; standing waters and transitional waters,SOHYD_174,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:001,Soil inventory - pedological/geological characterization,SOGEO_001,"iop:VariableSet,skos:Concept",,,,so:c2,,,,,,"et:22245,et:22279,et:30319,et:30321,et:30323,et:30324,et:22065,et:22264,et:30067",,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-01-05
+so:001,Soil inventory - pedological/geological characterization,SOGEO_001,iop:VariableSet,,,,so:c2,,,,,,"et:22245,et:22279,et:30319,et:30321,et:30323,et:30324,et:22065,et:22264,et:30067",,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-01-09
 so:c1,Sociosphere,,skos:Collection,,,,,et:30317,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
 so:c2,Geosphere,,skos:Collection,,,,,et:30316,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
 so:c3,Hydrosphere,,skos:Collection,,,,,et:21922,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
