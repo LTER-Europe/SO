@@ -11,7 +11,7 @@ import json
 file_name = os.environ["FILE_NAME"]
 sheet_id = os.environ["SHEET_ID"]
 
-sheet_obj = Sheets.from_files(os.environ["GOOGLE_API_KEY"])
+sheet_obj = Sheets.from_developer_key(os.environ["GOOGLE_API_KEY"])
 sheet = sheet_obj.get(sheet_id)
 sheet.sheets[0].to_csv(file_name + ".csv", encoding="utf-8", dialect="excel")
 txt_delimiter = ","
