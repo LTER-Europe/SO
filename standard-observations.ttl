@@ -43,7 +43,7 @@
   <omv:knownUsage> "annotation of observation data"@en;
   <omv:resourceLocator> <https://raw.githubusercontent.com/LTER-Europe/SO/main/standard-observations.ttl> .
 
-so:027 a iop:VariableSet;
+so:027 a skos:concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
