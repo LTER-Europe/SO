@@ -574,7 +574,7 @@ so:031 a skos:Concept, iop:VariableSet;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
-  skos:notation so:031;
+  skos:notation "SOSOC_031"@en;
   skos:prefLabel "Yield (cropland, grassland, forest, fishery)"@en;
   skos:topConceptOf <https://vocabs.lter-europe.net/so/> .
 
@@ -583,7 +583,7 @@ so:030 a skos:Concept, iop:VariableSet;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
-  skos:notation so:030;
+  skos:notation "SOSOC_030"@en;
   skos:prefLabel "Land-based income"@en;
   skos:topConceptOf <https://vocabs.lter-europe.net/so/> .
 
@@ -592,7 +592,7 @@ so:114 a skos:Concept, iop:VariableSet;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
-  skos:notation so:114;
+  skos:notation "SOSOC_114"@en;
   skos:prefLabel "Livestock"@en;
   skos:topConceptOf <https://vocabs.lter-europe.net/so/> .
 
@@ -601,7 +601,7 @@ so:032 a skos:Concept, iop:VariableSet;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
-  skos:notation so:032;
+  skos:notation "SOSOC_032"@en;
   skos:prefLabel "Governance structure and character"@en;
   skos:topConceptOf <https://vocabs.lter-europe.net/so/> .
 
@@ -610,7 +610,7 @@ so:036 a skos:Concept, iop:VariableSet;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
-  skos:notation so:036;
+  skos:notation "SOSOC_036"@en;
   skos:prefLabel "Land cover, land use, land cover change, land use change (CORINE)"@en;
   skos:topConceptOf <https://vocabs.lter-europe.net/so/> .
 
@@ -619,7 +619,7 @@ so:037 a skos:Concept, iop:VariableSet;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
-  skos:notation so:037;
+  skos:notation "SOSOC_037"@en;
   skos:prefLabel "Land cover, land use (Statistics) and (for Platforms only) land use actors"@en;
   skos:topConceptOf <https://vocabs.lter-europe.net/so/> .
 
@@ -628,7 +628,7 @@ so:040 a skos:Concept, iop:VariableSet;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
-  skos:notation so:040;
+  skos:notation "SOSOC_040"@en;
   skos:prefLabel "Ecosystem services profile"@en;
   skos:topConceptOf <https://vocabs.lter-europe.net/so/> .
 
@@ -637,7 +637,7 @@ so:042 a skos:Concept, iop:VariableSet;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
-  skos:notation so:042;
+  skos:notation "SOSOC_042"@en;
   skos:prefLabel "Economics (GDP per capita; Per capita income)"@en;
   skos:topConceptOf <https://vocabs.lter-europe.net/so/> .
 
@@ -646,7 +646,7 @@ so:043 a skos:Concept, iop:VariableSet;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
-  skos:notation so:043;
+  skos:notation "SOSOC_043"@en;
   skos:prefLabel "Demography"@en;
   skos:topConceptOf <https://vocabs.lter-europe.net/so/> .
 
@@ -655,7 +655,7 @@ so:044 a skos:Concept, iop:VariableSet;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
-  skos:notation so:044;
+  skos:notation "SOSOC_044"@en;
   skos:prefLabel "Status of employment"@en;
   skos:topConceptOf <https://vocabs.lter-europe.net/so/> .
 
@@ -664,7 +664,7 @@ so:045 a skos:Concept, iop:VariableSet;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
-  skos:notation so:045;
+  skos:notation "SOSOC_045"@en;
   skos:prefLabel "Population consumption statistics"@en;
   skos:topConceptOf <https://vocabs.lter-europe.net/so/> .
 
@@ -673,7 +673,7 @@ so:183 a skos:Concept, iop:VariableSet;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
-  skos:notation so:183;
+  skos:notation "SOSOC_183"@en;
   skos:prefLabel "Resource use (MFA)"@en;
   skos:topConceptOf <https://vocabs.lter-europe.net/so/> .
 
@@ -682,7 +682,7 @@ so:184 a skos:Concept, iop:VariableSet;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
-  skos:notation so:184;
+  skos:notation "SOSOC_184"@en;
   skos:prefLabel "Subsidies programs / schemes"@en;
   skos:topConceptOf <https://vocabs.lter-europe.net/so/> .
 <http://vocabs.lter-europe.net/so/>
