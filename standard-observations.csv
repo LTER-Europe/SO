@@ -9,7 +9,7 @@ PREFIX,iop,https://w3id.org/iadopt/ont/
 PREFIX,puv,https://w3id.org/env/puv#
 PREFIX,sosa,http://www.w3.org/ns/sosa/
 PREFIX,obo,http://purl.obolibrary.org/obo/
-PREFIX,rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#,,,,,,,,,,,,,,,,,2023-08-29
+PREFIX,rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#
 PREFIX,rdfs,http://www.w3.org/2000/01/rdf-schema#
 PREFIX,et,"
 http://vocabs.lter-europe.net/EnvThes/"
@@ -19,78 +19,90 @@ dct:title,eLTER Standard Observations
 dct:description,Thesaurus for eLTER Standard Observations
 dct:creator,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A
 dct:contributor,https://ror.org/00pggkr55
-dct:license,https://creativecommons.org/licenses/by/4.0/,,,,,,,,,,,,,,,,,,2023-11-06
-owl:versionInfo,0.0.1,,,,,,,,,,,,,,,,,,2023-11-06
-dct:created,2023-08-16T11:00:00+00:00,,,,,,,,,,,,,,,,,,2023-11-06
-dct:modified,2023-08-16T11:00:00+00:00
-owl:ontolgoyIRI,https://vocabs.lter-europe.net/so/,,,,,,,,,,,,,,,,,,2023-11-06
-omv:acronym,SO,,,,,,,,,,,,,,,,,,,2023-11-06
-omv:resourceLocator,https://raw.githubusercontent.com/LTER-Europe/SO/main/standard-observations.ttl,,,,,,,,,,,,,,,,,,,2023-11-06
-omv:keywords,http://vocabs.lter-europe.net/EnvThes/21672,,,,,,,,,,,,,,,,,,,2023-11-06
-dct:publisher,https://ror.org/00pggkr55,,,,,,,,,,,,,,,,,,,2023-11-06
-omv:knownUsage,annotation of observation data,,,,,,,,,,,,,,,,,,,2023-11-06
-dct:audience,http://schema.org/Researcher,,,,,,,,,,,,,,,,,,,2023-11-06
-doap:repository,https://ecoportal.lifewatch.eu/ontologies/,,,,,,,,,,,,,,,,,,,2023-11-06
-schema:includedInDataCatalog,https://ecoportal.lifewatch.eu/ontologies/,,,,,,,,,,,,,,,,,,,2023-11-06
-dct:language,en,,,,,,,,,,,,,,,,,,2023-11-06,2023-11-06
-schema:includedInDataCatalog,https://vocabs.lter-europe.net/en/,,,,,,,,,,,,,,,,,,2023-11-06,2023-11-06
+dct:license,https://creativecommons.org/licenses/by/4.0/
+owl:versionInfo,0.0.3
+dct:created,2023-08-16T11:00:00+00:00
+dct:modified,2024-06-24
+owl:ontolgoyIRI,https://vocabs.lter-europe.net/so/
+omv:acronym,SO
+omv:resourceLocator,https://raw.githubusercontent.com/LTER-Europe/SO/main/standard-observations.ttl
+omv:keywords,http://vocabs.lter-europe.net/EnvThes/21672
+dct:publisher,https://ror.org/00pggkr55
+omv:knownUsage,annotation of observation data
+dct:audience,http://schema.org/Researcher
+doap:repository,https://ecoportal.lifewatch.eu/ontologies/
+schema:includedInDataCatalog,https://ecoportal.lifewatch.eu/ontologies/
+dct:language,en
+schema:includedInDataCatalog,https://vocabs.lter-europe.net/en/
 
 Identifier,skos:prefLabel@en,skos:notation,"rdf:type(separator="","")",skos:definition@en,"skos:broader(separator="","")","dct:source(separator="","")",^skos:member,"skos:exactMatch(separator="","")",dct:isReplacedBy,"skos:closeMatch(separator="","")","skos:narrowMatch(separator="","")","skos:related(separator="","")","obo:RO_0002351(separator="","")","skos:broadMatch(separator="","")","owl:sameAs(separator="","")",rdfs:seeAlso,dct:creator,dct:contributor,dct:created^^xsd:date,2024-01-05
-so:027,Meteorological data,SOATM_027,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-01-23
-so:028,Radiation,SOATM_028,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-26
-so:098,Ground heat flux,SOATM_098,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:103,Atmospheric deposition in precipitation,SOATM_103,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:108,Dry deposition of N-components,SOATM_108,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:176,"CO2 flux and concentration, Latent heat flux, Sensible heat flux - Eddy Covariance",SOATM_176,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:014,Flying insects,SOBIO_014,iop:VariableSet,,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:015,Vegetation phenology and Leaf Area Index – European scale,SOBIO_015,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:016,Vegetation phenology – site scale,SOBIO_016,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:017,Vegetation composition (mainly species level+abundance),SOBIO_017,iop:VariableSet,,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:018,"Birds, bats, frogs, insects using acoustic recording",SOBIO_018,iop:VariableSet,,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:019,Pollen and spores,SOBIO_019,iop:VariableSet,,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:021,eDNA Water,SOBIO_021,iop:VariableSet,,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:022,eDNA soil,SOBIO_022,iop:VariableSet,,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:023,Vegetation aboveground biomass - forest (site scale),SOBIO_023,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:024,Vegetation aboveground biomass – non-forested sites,SOBIO_024,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:025,Leaf area index - forests (site scale),SOBIO_025,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:026,Leaf area index – non-forested sites,SOBIO_026,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:090,Gross primary production,SOBIO_090,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:091,Transpiration (plants),SOBIO_091,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:092,Aboveground litterfall - forests,SOBIO_092,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:093,Belowground biomass - terrestrial,SOBIO_093,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:095,"Leaf C, N, K, P, Ca, Mg, Mn content - terrestrial",SOBIO_095,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:096,"Clorophyll a (benthic, pelagic) - standing, running waters",SOBIO_096,iop:VariableSet,,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:140,Vegetation structure - site scale,SOBIO_140,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:177,Tree growth,SOBIO_177,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:003,Soil chemical and physical characteristics,SOGEO_003,iop:VariableSet,,,,so:c2,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:048,Percolation/infiltration - soil,SOGEO_048,iop:VariableSet,,,,so:c2,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:155,Sediment (aquatic and marine) inventory,SOGEO_155,iop:VariableSet,,,,so:c2,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:167,Soil water chemical characteristics,SOGEO_167,iop:VariableSet,,,,so:c2,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:004,Profiles of physical and chemical waters characteristics - surface water (standing),SOHYD_004,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:005,Physical and chemical water characteristics - surface water (running waters),SOHYD_005,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:006,Physical and chemical water characteristics - groundwater,SOHYD_006,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:010,Water level - surface water (running water),SOHYD_010,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:011,Ice cover/thickness (standing and transitional water),SOHYD_011,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:012,Snow cover and depths,SOHYD_012,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:058,"Stable isotopes (18O, 2H) - standing, running waters",SOHYD_058,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:059,"Stable Isotopes (18O, 2H) - groundwater",SOHYD_059,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:062,"Major ion concentrations: Cl, SO4, Br, Na, K, Mg, Ca, B - groundwater",SOHYD_062,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:064,"Nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4, DOC, DIC - groundwater",SOHYD_064,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:065,DOM composition - groundwater,SOHYD_065,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:067,Micropollutants: non-target screening [~1000 substances] - running waters,SOHYD_067,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:164,Glacier front variation,SOHYD_164,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:165,Glacier mass balance,SOHYD_165,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:166,Glacier area,SOHYD_166,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:168,Soil water content/soil temperature,SOHYD_168,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:169,"Nutrient concentration: NO2, NH4, DOC, DIC - running waters",SOHYD_169,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:170,"Profiles of nutrient concentration: NO2, NH4, DOC, DIC - standing waters",SOHYD_170,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:171,"Major ion concentrations: Cl, SO4, Br, Na, K, Mg, Ca, B, Silica - inland running/standing waters, transitional waters",SOHYD_171,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:172,"Nutrient concentration: TP, SRP, TDN, NO3 - running waters",SOHYD_172,iop:VariableSet,,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:173,"Profiles of nutrient concentration: TP, SRP, TDN, NO3, - standing waters",SOHYD_173,iop:VariableSet,,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:174,Secchi-Depth; standing waters and transitional waters,SOHYD_174,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:001,Soil inventory - pedological/geological characterization,SOGEO_001,iop:VariableSet,,,,so:c2,,,,,,"et:22245,et:22279,et:30319,et:30321,et:30323,et:30324,et:22065,et:22264,et:30067",,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-01-09
-so:c1,Sociosphere,,skos:Collection,,,,,et:30317,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:027,Meteorological data,SOATM_027,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
+so:028,Radiation,SOATM_028,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
+so:098,Soil heat flux,SOATM_098,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
+so:103,Atmospheric deposition in precipitation,SOATM_103,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:108,Dry deposition of N-components,SOATM_108,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:176,"CO2 flux and concentration, Latent heat flux, Sensible heat flux - Eddy Covariance",SOATM_176,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:014,Flying insects,SOBIO_014,"iop:VariableSet,skos:concept",,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:015,Vegetation phenology and Leaf Area Index – European scale,SOBIO_015,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:016,Vegetation phenology – site scale,SOBIO_016,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:017,Vegetation composition (mainly species level+abundance),SOBIO_017,"iop:VariableSet,skos:concept",,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:018,"Birds, bats, frogs, insects using acoustic recording",SOBIO_018,"iop:VariableSet,skos:concept",,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:019,Pollen and spores,SOBIO_019,"iop:VariableSet,skos:concept",,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:021,eDNA Water,SOBIO_021,"iop:VariableSet,skos:concept",,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:022,eDNA soil,SOBIO_022,"iop:VariableSet,skos:concept",,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:023,Vegetation aboveground biomass - forest (site scale),SOBIO_023,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
+so:024,Vegetation aboveground biomass – non-forested sites,SOBIO_024,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:025,Leaf area index - forests (site scale),SOBIO_025,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:026,Leaf area index – non-forested sites,SOBIO_026,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:090,Gross primary production,SOBIO_090,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:091,Transpiration (plants),SOBIO_091,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:092,Aboveground litterfall - forests,SOBIO_092,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:093,Belowground biomass - terrestrial,SOBIO_093,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:095,"Leaf C, N, K, P, Ca, Mg, Mn content - terrestrial",SOBIO_095,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:096,"Clorophyll a (benthic, pelagic) - standing, running waters",SOBIO_096,"iop:VariableSet,skos:concept",,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:140,Vegetation structure - site scale,SOBIO_140,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:177,Tree growth,SOBIO_177,"iop:VariableSet,skos:concept",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:003,Soil chemical and physical characteristics,SOGEO_003,"iop:VariableSet,skos:concept",,,,so:c2,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:048,Percolation/infiltration - soil,SOGEO_048,"iop:VariableSet,skos:concept",,,,so:c2,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:155,Sediment (aquatic and marine) inventory,SOGEO_155,"iop:VariableSet,skos:concept",,,,so:c2,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:167,Soil water chemical characteristics,SOGEO_167,"iop:VariableSet,skos:concept",,,,so:c2,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:004,Profiles of physical and chemical waters characteristics - surface water (standing),SOHYD_004,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:005,Physical and chemical water characteristics - surface water (running waters),SOHYD_005,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:006,Physical and chemical water characteristics - groundwater,SOHYD_006,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:010,Water level - surface water (running water),SOHYD_010,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:011,Ice cover/thickness (standing and transitional water),SOHYD_011,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:012,Snow cover and depths,SOHYD_012,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:058,"Stable isotopes (18O, 2H) - standing, running waters",SOHYD_058,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:059,"Stable Isotopes (18O, 2H) - groundwater",SOHYD_059,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:062,"Major ion concentrations: Cl, SO4, Br, Na, K, Mg, Ca - groundwater",SOHYD_062,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
+so:064,"Nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4, DOC, DIC - groundwater",SOHYD_064,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:067,Micropollutants: non-target screening [~1000 substances] - running waters,SOHYD_067,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:164,Glacier front variation,SOHYD_164,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:165,Glacier mass balance,SOHYD_165,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:166,Glacier area,SOHYD_166,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:168,"Soil water content, soil temperature",SOHYD_168,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
+so:169,"Nutrient concentration: DOC, DIC - running waters",SOHYD_169,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
+so:170,"Profiles of nutrient concentration: DOC, DIC - standing waters",SOHYD_170,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
+so:171,"Major ion concentrations: Cl, SO4, Br, Na, K, Mg, Ca, B, Silica - inland running/standing waters, transitional waters",SOHYD_171,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:172,"Nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4 - running waters",SOHYD_172,"iop:VariableSet,skos:concept",,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
+so:173,"Profiles of nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4 - standing waters",SOHYD_173,"iop:VariableSet,skos:concept",,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
+so:174,Secchi-Depth; standing waters and transitional waters,SOHYD_174,"iop:VariableSet,skos:concept",,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
+so:001,Soil inventory - pedological/geological characterization,SOGEO_001,"iop:VariableSet,skos:concept",,,,so:c2,,,,,,"et:22245,et:22279,et:30319,et:30321,et:30323,et:30324,et:22065,et:22264,et:30067",,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-01-09
+so:c1,Sociosphere,,skos:Collection,,,,,et:30317,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
 so:c2,Geosphere,,skos:Collection,,,,,et:30316,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
 so:c3,Hydrosphere,,skos:Collection,,,,,et:21922,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
 so:c4,Biosphere,,skos:Collection,,,,,et:21921,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:c5,Atmosphere,,skos:Collection,,,,,et:21920,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:c5,Atmosphere,,skos:Collection,,,,,et:21920,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
+so:031,"Yield (cropland, grassland, forest, fishery)",so:031,"iop:VariableSet,skos:concept",,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
+so:030,Land-based income,so:030,"iop:VariableSet,skos:concept",,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
+so:114,Livestock,so:114,"iop:VariableSet,skos:concept",,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
+so:032,Governance structure and character,so:032,"iop:VariableSet,skos:concept",,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
+so:036,"Land cover, land use, land cover change, land use change (CORINE)",so:036,"iop:VariableSet,skos:concept",,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
+so:037,"Land cover, land use (Statistics) and (for Platforms only) land use actors",so:037,"iop:VariableSet,skos:concept",,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
+so:040,Ecosystem services profile,so:040,"iop:VariableSet,skos:concept",,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
+so:042,Economics (GDP per capita; Per capita income),so:042,"iop:VariableSet,skos:concept",,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
+so:043,Demography,so:043,"iop:VariableSet,skos:concept",,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
+so:044,Status of employment,so:044,"iop:VariableSet,skos:concept",,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
+so:045,Population consumption statistics,so:045,"iop:VariableSet,skos:concept",,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
+so:183,Resource use (MFA),so:183,"iop:VariableSet,skos:concept",,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
+so:184,Subsidies programs / schemes,so:184,"iop:VariableSet,skos:concept",,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
