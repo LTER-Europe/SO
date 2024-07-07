@@ -23,7 +23,8 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://vocabs.lter-europe.net/so/> <doap:repository> <https://ecoportal.lifewatch.eu/ontologies/>;
+<https://vocabs.lter-europe.net/so/> a skos:ConceptScheme;
+  <doap:repository> <https://ecoportal.lifewatch.eu/ontologies/>;
   dct:audience schema:Researcher;
   dct:contributor <https://ror.org/00pggkr55>;
   dct:created "2023-08-16T11:00:00+00:00"@en;
@@ -31,12 +32,13 @@
   dct:description "Thesaurus for eLTER Standard Observations"@en;
   dct:language "en"@en;
   dct:license <https://creativecommons.org/licenses/by/4.0/>;
-  dct:modified "2024-06-24"@en;
+  dct:modified "2024-07-07"@en;
   dct:publisher <https://ror.org/00pggkr55>;
   dct:title "eLTER Standard Observations"@en;
   schema:includedInDataCatalog <https://ecoportal.lifewatch.eu/ontologies/>, <https://vocabs.lter-europe.net/en/>;
   owl:ontolgoyIRI <https://vocabs.lter-europe.net/so/>;
   owl:versionInfo "0.0.3"@en;
+  skos:hasTopConcept so:171;
   skos:prefLabel "eLTER SOs"@en;
   <omv:acronym> "SO"@en;
   <omv:keywords> et:21672;
@@ -410,12 +412,14 @@ so:170 a iop:VariableSet;
   skos:notation "SOHYD_170"@en;
   skos:prefLabel "Profiles of nutrient concentration: DOC, DIC - standing waters"@en .
 
-so:171 a iop:VariableSet;
+so:171 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
+  skos:inScheme <https://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_171"@en;
-  skos:prefLabel "Major ion concentrations: Cl, SO4, Br, Na, K, Mg, Ca, B, Silica - inland running/standing waters, transitional waters"@en .
+  skos:prefLabel "Major ion concentrations: Cl, SO4, Br, Na, K, Mg, Ca, B, Silica - inland running/standing waters, transitional waters"@en;
+  skos:topConceptOf <https://vocabs.lter-europe.net/so/> .
 
 so:172 a iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0003-2195-3997>;
