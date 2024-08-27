@@ -53,9 +53,9 @@ jobs:
           git diff-index --quiet HEAD || git commit -m "New .ttl from Google sheet has been generated"
           git push
 
-      - name: publish-rdf
-        env:
-          SKOSMOS_CREDENTIALS: ${{secrets.SKOSMOS_CREDENTIALS}}
-          SKOSMOS_URL: ${{vars.SKOSMOS_URL}}
-        run: |
-          workflow/publish.sh
+      #- name: publish-rdf
+      # env:
+      #    SKOSMOS_CREDENTIALS: ${{secrets.SKOSMOS_CREDENTIALS}}
+      #    SKOSMOS_URL: ${{vars.SKOSMOS_URL}}
+      #  run: |
+      #    workflow/publish.sh
