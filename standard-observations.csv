@@ -22,7 +22,7 @@ dct:contributor,https://ror.org/00pggkr55
 dct:license,https://creativecommons.org/licenses/by/4.0/
 owl:versionInfo,0.0.3
 dct:created,2023-08-16T11:00:00+00:00
-dct:modified,2024-07-07
+dct:modified,2024-08-27
 owl:ontolgoyIRI,https://vocabs.lter-europe.net/so/
 omv:acronym,SO
 omv:resourceLocator,https://raw.githubusercontent.com/LTER-Europe/SO/main/standard-observations.ttl
@@ -76,7 +76,7 @@ so:058,"Stable isotopes (18O, 2H) - standing, running waters",SOHYD_058,iop:Vari
 so:059,"Stable Isotopes (18O, 2H) - groundwater",SOHYD_059,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
 so:062,"Major ion concentrations: Cl, SO4, Br, Na, K, Mg, Ca - groundwater",SOHYD_062,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
 so:064,"Nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4, DOC, DIC - groundwater",SOHYD_064,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:067,Micropollutants: non-target screening [~1000 substances] - running waters,SOHYD_067,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:067,Micropollutants: non-target screening [around 1000 substances] - running waters,SOHYD_067,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-08-27
 so:164,Glacier front variation,SOHYD_164,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
 so:165,Glacier mass balance,SOHYD_165,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-07-07
 so:166,Glacier area,SOHYD_166,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
