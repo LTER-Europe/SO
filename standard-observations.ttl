@@ -31,7 +31,7 @@
   dct:description "Thesaurus for eLTER Standard Observations"@en;
   dct:language "en"@en;
   dct:license <https://creativecommons.org/licenses/by/4.0/>;
-  dct:modified "2024-08-27"@en;
+  dct:modified "2025-06-06"@en;
   dct:publisher <https://ror.org/00pggkr55>;
   dct:title "eLTER Standard Observations"@en;
   schema:includedInDataCatalog <https://ecoportal.lifewatch.eu/ontologies/>, <https://vocabs.lter-europe.net/en/>;
@@ -57,7 +57,7 @@ so:c5 a skos:Collection;
   skos:exactMatch et:21920;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
   skos:member so:015, so:016, so:023, so:024, so:025, so:026, so:027, so:028, so:090,
-    so:091, so:092, so:093, so:095, so:098, so:103, so:108, so:140, so:176, so:177;
+    so:091, so:092, so:095, so:098, so:103, so:108, so:140, so:176, so:177;
   skos:prefLabel "Atmosphere"@en .
 
 so:028 a iop:VariableSet;
@@ -108,7 +108,7 @@ so:c4 a skos:Collection;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
   skos:exactMatch et:21921;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
-  skos:member so:014, so:017, so:018, so:019, so:021, so:022, so:096, so:172, so:173;
+  skos:member so:014, so:017, so:018, so:019, so:021, so:022, so:096;
   skos:prefLabel "Biosphere"@en .
 
 so:015 a iop:VariableSet;
@@ -164,63 +164,56 @@ so:023 a iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  skos:notation "SOBIO_023"@en;
+  skos:notation "SOATM_023"@en;
   skos:prefLabel "Vegetation aboveground biomass - forest (site scale)"@en .
 
 so:024 a iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  skos:notation "SOBIO_024"@en;
+  skos:notation "SOATM_024"@en;
   skos:prefLabel "Vegetation aboveground biomass – non-forested sites"@en .
 
 so:025 a iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  skos:notation "SOBIO_025"@en;
+  skos:notation "SOATM_025"@en;
   skos:prefLabel "Leaf area index - forests (site scale)"@en .
 
 so:026 a iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  skos:notation "SOBIO_026"@en;
+  skos:notation "SOATM_026"@en;
   skos:prefLabel "Leaf area index – non-forested sites"@en .
 
 so:090 a iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  skos:notation "SOBIO_090"@en;
+  skos:notation "SOATM_090"@en;
   skos:prefLabel "Gross primary production"@en .
 
 so:091 a iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  skos:notation "SOBIO_091"@en;
+  skos:notation "SOATM_091"@en;
   skos:prefLabel "Transpiration (plants)"@en .
 
 so:092 a iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  skos:notation "SOBIO_092"@en;
+  skos:notation "SOATM_092"@en;
   skos:prefLabel "Aboveground litterfall - forests"@en .
-
-so:093 a iop:VariableSet;
-  dct:contributor <https://orcid.org/0000-0003-2195-3997>;
-  dct:created "2023-08-16"^^xsd:date;
-  dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  skos:notation "SOBIO_093"@en;
-  skos:prefLabel "Belowground biomass - terrestrial"@en .
 
 so:095 a iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  skos:notation "SOBIO_095"@en;
+  skos:notation "SOATM_095"@en;
   skos:prefLabel "Leaf C, N, K, P, Ca, Mg, Mn content - terrestrial"@en .
 
 so:096 a iop:VariableSet;
@@ -234,14 +227,14 @@ so:140 a iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  skos:notation "SOBIO_140"@en;
+  skos:notation "SOATM_140"@en;
   skos:prefLabel "Vegetation structure - site scale"@en .
 
 so:177 a iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  skos:notation "SOBIO_177"@en;
+  skos:notation "SOATM_177"@en;
   skos:prefLabel "Tree growth"@en .
 
 so:003 a iop:VariableSet;
@@ -295,7 +288,7 @@ so:c3 a skos:Collection;
   skos:exactMatch et:21922;
   skos:inScheme <https://vocabs.lter-europe.net/so/>;
   skos:member so:004, so:005, so:006, so:010, so:011, so:012, so:058, so:059, so:062,
-    so:064, so:067, so:164, so:165, so:166, so:168, so:169, so:170, so:171, so:174;
+    so:064, so:164, so:165, so:166, so:168, so:169, so:170, so:171, so:172, so:173, so:174;
   skos:prefLabel "Hydrosphere"@en .
 
 so:005 a iop:VariableSet;
@@ -360,13 +353,6 @@ so:064 a iop:VariableSet;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
   skos:notation "SOHYD_064"@en;
   skos:prefLabel "Nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4, DOC, DIC - groundwater"@en .
-
-so:067 a iop:VariableSet;
-  dct:contributor <https://orcid.org/0000-0003-2195-3997>;
-  dct:created "2023-08-16"^^xsd:date;
-  dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  skos:notation "SOHYD_067"@en;
-  skos:prefLabel "Micropollutants: non-target screening [~1000 substances] - running waters"@en .
 
 so:164 a iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0003-2195-3997>;
@@ -490,7 +476,7 @@ so:036 a iop:VariableSet;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
   skos:notation "SOSOC_036"@en;
-  skos:prefLabel "Land cover, land use, land cover change, land use change (CORINE)"@en .
+  skos:prefLabel "Land cover, land use, land cover change, land use change - CORINE"@en .
 
 so:037 a iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0003-2195-3997>;

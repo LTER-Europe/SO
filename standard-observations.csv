@@ -22,7 +22,7 @@ dct:contributor,https://ror.org/00pggkr55
 dct:license,https://creativecommons.org/licenses/by/4.0/
 owl:versionInfo,0.0.3
 dct:created,2023-08-16T11:00:00+00:00
-dct:modified,2024-08-27
+dct:modified,2025-06-06
 owl:ontolgoyIRI,https://vocabs.lter-europe.net/so/
 omv:acronym,SO
 omv:resourceLocator,https://raw.githubusercontent.com/LTER-Europe/SO/main/standard-observations.ttl
@@ -50,18 +50,17 @@ so:018,"Birds, bats, frogs, insects using acoustic recording",SOBIO_018,iop:Vari
 so:019,Pollen and spores,SOBIO_019,iop:VariableSet,,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
 so:021,eDNA Water,SOBIO_021,iop:VariableSet,,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
 so:022,eDNA soil,SOBIO_022,iop:VariableSet,,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:023,Vegetation aboveground biomass - forest (site scale),SOBIO_023,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
-so:024,Vegetation aboveground biomass – non-forested sites,SOBIO_024,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:025,Leaf area index - forests (site scale),SOBIO_025,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:026,Leaf area index – non-forested sites,SOBIO_026,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:090,Gross primary production,SOBIO_090,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:091,Transpiration (plants),SOBIO_091,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:092,Aboveground litterfall - forests,SOBIO_092,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:093,Belowground biomass - terrestrial,SOBIO_093,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:095,"Leaf C, N, K, P, Ca, Mg, Mn content - terrestrial",SOBIO_095,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:023,Vegetation aboveground biomass - forest (site scale),SOATM_023,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2025-06-06
+so:024,Vegetation aboveground biomass – non-forested sites,SOATM_024,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2025-06-06
+so:025,Leaf area index - forests (site scale),SOATM_025,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2025-06-06
+so:026,Leaf area index – non-forested sites,SOATM_026,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2025-06-06
+so:090,Gross primary production,SOATM_090,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2025-06-06
+so:091,Transpiration (plants),SOATM_091,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2025-06-06
+so:092,Aboveground litterfall - forests,SOATM_092,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2025-06-06
+so:095,"Leaf C, N, K, P, Ca, Mg, Mn content - terrestrial",SOATM_095,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2025-06-06
 so:096,"Clorophyll a (benthic, pelagic) - standing, running waters",SOBIO_096,iop:VariableSet,,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:140,Vegetation structure - site scale,SOBIO_140,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:177,Tree growth,SOBIO_177,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
+so:140,Vegetation structure - site scale,SOATM_140,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2025-06-06
+so:177,Tree growth,SOATM_177,iop:VariableSet,,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2025-06-06
 so:003,Soil chemical and physical characteristics,SOGEO_003,iop:VariableSet,,,,so:c2,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
 so:048,Percolation/infiltration - soil,SOGEO_048,iop:VariableSet,,,,so:c2,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
 so:155,Sediment (aquatic and marine) inventory,SOGEO_155,iop:VariableSet,,,,so:c2,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
@@ -76,7 +75,6 @@ so:058,"Stable isotopes (18O, 2H) - standing, running waters",SOHYD_058,iop:Vari
 so:059,"Stable Isotopes (18O, 2H) - groundwater",SOHYD_059,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
 so:062,"Major ion concentrations: Cl, SO4, Br, Na, K, Mg, Ca - groundwater",SOHYD_062,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
 so:064,"Nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4, DOC, DIC - groundwater",SOHYD_064,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
-so:067,Micropollutants: non-target screening [~1000 substances] - running waters,SOHYD_067,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-08-27
 so:164,Glacier front variation,SOHYD_164,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
 so:165,Glacier mass balance,SOHYD_165,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-07-07
 so:166,Glacier area,SOHYD_166,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2023-08-23
@@ -84,8 +82,8 @@ so:168,"Soil water content, soil temperature",SOHYD_168,iop:VariableSet,,,,so:c3
 so:169,"Nutrient concentration: DOC, DIC - running waters",SOHYD_169,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
 so:170,"Profiles of nutrient concentration: DOC, DIC - standing waters",SOHYD_170,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
 so:171,"Major ion concentrations: Cl, SO4, Br, Na, K, Mg, Ca, B, Silica - inland running/standing waters, transitional waters",SOHYD_171,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-07-07
-so:172,"Nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4 - running waters",SOHYD_172,iop:VariableSet,,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
-so:173,"Profiles of nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4 - standing waters",SOHYD_173,iop:VariableSet,,,,so:c4,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
+so:172,"Nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4 - running waters",SOHYD_172,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2025-06-06
+so:173,"Profiles of nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4 - standing waters",SOHYD_173,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2025-06-06
 so:174,Secchi-Depth; standing waters and transitional waters,SOHYD_174,iop:VariableSet,,,,so:c3,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
 so:001,Soil inventory - pedological/geological characterization,SOGEO_001,iop:VariableSet,,,,so:c2,,,,,,"et:22245,et:22279,et:30319,et:30321,et:30323,et:30324,et:22065,et:22264,et:30067",,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-01-09
 so:c1,Sociosphere,,skos:Collection,,,,,et:30317,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2023-08-16,2024-06-24
@@ -97,7 +95,7 @@ so:031,"Yield (cropland, grassland, forest, fishery)",SOSOC_031,iop:VariableSet,
 so:030,Land-based income,SOSOC_030,iop:VariableSet,,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
 so:114,Livestock,SOSOC_114,iop:VariableSet,,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
 so:032,Governance structure and character,SOSOC_032,iop:VariableSet,,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
-so:036,"Land cover, land use, land cover change, land use change (CORINE)",SOSOC_036,iop:VariableSet,,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
+so:036,"Land cover, land use, land cover change, land use change - CORINE",SOSOC_036,iop:VariableSet,,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2025-05-23
 so:037,"Land cover, land use (Statistics) and (for Platforms only) land use actors",SOSOC_037,iop:VariableSet,,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
 so:040,Ecosystem services profile,SOSOC_040,iop:VariableSet,,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
 so:042,Economics (GDP per capita; Per capita income),SOSOC_042,iop:VariableSet,,,,so:c1,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,https://orcid.org/0000-0003-2195-3997,2024-06-24,2024-06-24
