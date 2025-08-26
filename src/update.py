@@ -10,6 +10,7 @@ RENDERING_UPDATE = """@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix iop:   <https://w3id.org/iadopt/ont/> .
 @prefix puv: <https://w3id.org/env/puv#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 
 iop:constrains  a     owl:ObjectProperty ;
         rdfs:comment  "A Constraint constrains an Entity having a role in the Variable description." ;
@@ -77,6 +78,12 @@ sosa:madeBySensor
   schema:rangeIncludes sosa:Sensor ;
   owl:inverseOf sosa:madeObservation ;
   rdfs:isDefinedBy sosa: .
+
+obo:RO_0002351
+ a owl:ObjectProperty ; 
+ rdfs:label "has member"@en ;
+ rdf:comment "has member is a mereological relation between a collection and an item."@en ;
+ owl:inverseOf obo:RO_0002350 .
 """
 
 vocab_file = open(f"./{FILE_NAME}.ttl", "r")
