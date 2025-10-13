@@ -1,17 +1,13 @@
-metadata:
-  author: "Alessandro Oggioni (CNR-IREA)"
-  orcid: "https://orcid.org/0000-0002-7997-219X"
-  license: "CC-BY 4.0"
-  affiliation: "National Research Council of Italy – Institute for Electromagnetic Sensing of the Environment (CNR-IREA)"
-  ror: "https://ror.org/02wxw4x45"
-  description: >
-    Workflow to automatically generate and publish RDF Turtle (.ttl) files 
-    from a Google Sheet. The process supports eLTER-RI controlled vocabularies, 
-    ensuring FAIRness by synchronizing generated RDF data with a Fuseki triple 
-    store and Skosmos interface.
-name: "eLTER-RI RDF Generation & FAIR Publishing  "
+name: "eLTER-RI RDF Generation & FAIR Publishing"
+env:
+  METADATA_AUTHOR: "Alessandro Oggioni (CNR-IREA)"
+  METADATA_ORCID: "https://orcid.org/0000-0002-7997-219X"
+  METADATA_ROR: "https://ror.org/02wxw4x45"
+  METADATA_LICENSE: "CC-BY 4.0"
+  METADATA_DESCRIPTION: >
+    Workflow to generate and publish RDF Turtle (.ttl) files from Google Sheets.
+    Ensures FAIRness by syncing RDF data with a Fuseki triple store and Skosmos interface.
 on:
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 jobs:
   sheet2rdf:
