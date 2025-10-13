@@ -1,6 +1,15 @@
-# This file has been modified from its originally licensed version
-# by WillOnGit - see README.md at repository root for licence
-name: "Generate and publish RDF ttl from Gsheet"
+metadata:
+  author: "Alessandro Oggioni (CNR-IREA)"
+  orcid: "https://orcid.org/0000-0002-7997-219X"
+  license: "CC-BY 4.0"
+  affiliation: "National Research Council of Italy – Institute for Electromagnetic Sensing of the Environment (CNR-IREA)"
+  ror: "https://ror.org/02wxw4x45"
+  description: >
+    Workflow to automatically generate and publish RDF Turtle (.ttl) files 
+    from a Google Sheet. The process supports eLTER-RI controlled vocabularies, 
+    ensuring FAIRness by synchronizing generated RDF data with a Fuseki triple 
+    store and Skosmos interface.
+name: "eLTER-RI RDF Generation & FAIR Publishing  "
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
