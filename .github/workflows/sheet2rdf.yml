@@ -52,13 +52,17 @@ jobs:
       - name: conversion-xls2rdf
         env:
           FILE_NAME: ${{secrets.FILE_NAME}}
+          VOCAB_TYPE: ${{ env.VOCAB_TYPE }}
         run: |
           curl -L https://github.com/sparna-git/xls2rdf/releases/download/2.1.1/xls2rdf-app-2.1.1-onejar.jar -o xls2rdf.jar
           java -jar xls2rdf.jar convert -i $FILE_NAME.xlsx -o $FILE_NAME.ttl -l en
-          VOCAB_LOWER=$(echo "${{ env.VOCAB_TYPE }}" | tr '[:upper:]' '[:lower:]')
+
+          # Convert VOCAB_TYPE to lowercase in bash
+          VOCAB_LOWER=$(echo "$VOCAB_TYPE" | tr '[:upper:]' '[:lower:]')
           echo "<http://vocabs.lter-europe.net/${VOCAB_LOWER}/>" >> $FILE_NAME.ttl
           echo "   rdf:type skos:ConceptScheme" >> $FILE_NAME.ttl
           echo "   rdf:type owl:Ontology ." >> $FILE_NAME.ttl
+
           mv xls2rdf.log ./logs/
           rm -f xls2rdf.jar
 
