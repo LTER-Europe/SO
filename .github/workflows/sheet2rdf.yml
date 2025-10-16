@@ -1,5 +1,9 @@
 name: "eLTER-RI RDF Generation & FAIR Publishing"
+
 env:
+  VOCAB_TYPE: "SO"                # Change to "SO", "CL" or "EnvThes"
+  SHEET_TAB_NAME: "SOs"           # Tab/sheet name inside the Google Spreadsheet
+
   METADATA_AUTHOR: "Alessandro Oggioni (CNR-IREA)"
   METADATA_ORCID: "https://orcid.org/0000-0002-7997-219X"
   METADATA_ROR: "https://ror.org/02wxw4x45"
@@ -7,12 +11,15 @@ env:
   METADATA_DESCRIPTION: >
     Workflow to generate and publish RDF Turtle (.ttl) files from Google Sheets.
     Ensures FAIRness by syncing RDF data with a Fuseki triple store and Skosmos interface.
+
 on:
   workflow_dispatch:
+
 jobs:
   sheet2rdf:
     name: Sheet2RDF
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -20,7 +27,7 @@ jobs:
         with:
           auto-update-conda: true
           python-version: "3.11"
-          
+
       - name: prepare
         shell: bash -l {0}
         run: |
@@ -36,9 +43,11 @@ jobs:
           FILE_NAME: ${{secrets.FILE_NAME}}
           GOOGLE_API_KEY: ${{secrets.GOOGLE_API_KEY}}
           SHEET_ID: ${{secrets.SHEET_ID}}
+          SHEET_TAB_NAME: ${{ env.SHEET_TAB_NAME }}
         run: |
           conda activate sheet2rdf
-          python ./workflow/sheet2xls.py
+          echo "📄 Fetching sheet '$SHEET_TAB_NAME' from Google Spreadsheet (ID: $SHEET_ID)..."
+          python ./workflow/sheet2xls.py --sheet "$SHEET_TAB_NAME"
 
       - name: conversion-xls2rdf
         env:
@@ -46,21 +55,80 @@ jobs:
         run: |
           curl -L https://github.com/sparna-git/xls2rdf/releases/download/2.1.1/xls2rdf-app-2.1.1-onejar.jar -o xls2rdf.jar
           java -jar xls2rdf.jar convert -i $FILE_NAME.xlsx -o $FILE_NAME.ttl -l en
-          echo "<http://vocabs.lter-europe.net/so/>" >> $FILE_NAME.ttl
-          echo "   rdf:type skos:ConceptScheme" ;>> $FILE_NAME.ttl
-          echo "	 rdf:type owl:Ontology ." >> $FILE_NAME.ttl
+          echo "<http://vocabs.lter-europe.net/${{ env.VOCAB_TYPE | toLowerCase }}/>" >> $FILE_NAME.ttl
+          echo "   rdf:type skos:ConceptScheme" >> $FILE_NAME.ttl
+          echo "   rdf:type owl:Ontology ." >> $FILE_NAME.ttl
           mv xls2rdf.log ./logs/
           rm -f xls2rdf.jar
 
       - name: commit-artifacts
         run: |
           git add .
-          git diff-index --quiet HEAD || git commit -m "New .ttl from Google sheet has been generated"
+          git diff-index --quiet HEAD || git commit -m "New ${{ env.VOCAB_TYPE }} vocabulary files generated (TTL, XLSX)"
           git push
 
-      #- name: publish-rdf
-      # env:
-      #    SKOSMOS_CREDENTIALS: ${{secrets.SKOSMOS_CREDENTIALS}}
-      #    SKOSMOS_URL: ${{vars.SKOSMOS_URL}}
-      #  run: |
-      #    workflow/publish.sh
+      - name: extract-version
+        id: version
+        env:
+          FILE_NAME: ${{secrets.FILE_NAME}}
+        run: |
+          VERSION=$(grep -oP '(?<=owl:versionInfo ")([^"]+)' $FILE_NAME.ttl | head -n 1)
+          if [ -z "$VERSION" ]; then
+            echo "❌ owl:versionInfo not found in TTL file!"
+            exit 1
+          fi
+          echo "🔖 Found version: $VERSION"
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: check-existing-tag
+        id: checktag
+        run: |
+          TAG="v${{ steps.version.outputs.version }}"
+          if git rev-parse "$TAG" >/dev/null 2>&1; then
+            echo "⚠️ Tag $TAG already exists, skipping release."
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: create-tag-and-release
+        if: steps.checktag.outputs.exists == 'false'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.version.outputs.version }}
+          name: "Release ${{ env.VOCAB_TYPE }} v${{ steps.version.outputs.version }}"
+          body: |
+            **Automated FAIR release for ${{ env.VOCAB_TYPE }} vocabulary**
+
+            - **Author:** ${{ env.METADATA_AUTHOR }}
+            - **ORCID:** [${{ env.METADATA_ORCID }}](${{ env.METADATA_ORCID }})
+            - **ROR:** [${{ env.METADATA_ROR }}](${{ env.METADATA_ROR }})
+            - **License:** ${{ env.METADATA_LICENSE }}
+            - **Description:** ${{ env.METADATA_DESCRIPTION }}
+            - **Source Google Sheet tab:** ${{ env.SHEET_TAB_NAME }}
+
+            🕓 Published on: ${{ github.event.repository.updated_at }}
+            📄 RDF source: ${{ secrets.FILE_NAME }}.ttl  
+            📊 Data sources: ${{ secrets.FILE_NAME }}.xlsx
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: update-readme-version
+        env:
+          FILE_NAME: ${{secrets.FILE_NAME}}
+        run: |
+          if [ ! -f README.md ]; then
+            echo "⚠️ README.md not found, skipping update."
+            exit 0
+          fi
+          VERSION=$(grep -oP '(?<=owl:versionInfo ")([^"]+)' $FILE_NAME.ttl | head -n 1)
+          if [ -z "$VERSION" ]; then
+            echo "⚠️ No owl:versionInfo found, skipping README update."
+            exit 0
+          fi
+          echo "📝 Updating README.md with version $VERSION"
+          sed -i "s/\(Current version:\).*/\1 $VERSION/" README.md || echo "Current version: $VERSION" >> README.md
+          git add README.md
+          git diff-index --quiet HEAD || git commit -m "docs: update README with version $VERSION"
+          git push
