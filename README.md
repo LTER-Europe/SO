@@ -1,5 +1,6 @@
 # eLTER-RI Controlled Vocabulary – Standard Observations (SO)
 [![FAIR RDF Generation](https://github.com/eLTER-RI/vocab-so/actions/workflows/sheet2rdf.yml/badge.svg)](https://github.com/eLTER-RI/vocab-so/actions/workflows/sheet2rdf.yml)
+
 eLTER vocabulary for eLTER Standard Observations.
 Hosted at [vocabs.lter-europe.net](https://vocabs.lter-europe.net/so/en/).
 
