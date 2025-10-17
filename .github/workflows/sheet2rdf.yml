@@ -109,12 +109,13 @@ jobs:
           fi
 
           # Extract only the ConceptScheme metadata block — stop before skos:hasTopConcept
-          awk "
+          awk '
             BEGIN { capture=0 }
-            /<http:\/\/vocabs\.lter-europe\.net\/${VOCAB_LOWER}\/>[[:space:]]*a[[:space:]]*skos:ConceptScheme;/ { capture=1 }
+            /<http:\/\/vocabs\.lter-europe\.net\/'"$VOCAB_LOWER"'\/>[[:space:]]*a[[:space:]]*skos:ConceptScheme;/ { capture=1 }
             capture==1 { print }
             /skos:hasTopConcept/ { exit }
-          " \"$TTL_FILE\" > conceptscheme_block.ttl
+          ' "$TTL_FILE" > conceptscheme_block.ttl
+          ls -l "$TTL_FILE" || echo "⚠️ TTL file not found in current directory: $(pwd)"
 
           if [ ! -s conceptscheme_block.ttl ]; then
             echo "⚠️ ConceptScheme block not found for ${VOCAB_TYPE} — skipping metadata extraction."
