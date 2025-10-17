@@ -737,4 +737,5 @@ so:184 a skos:Concept, iop:VariableSet;
   skos:prefLabel "Subsidies programs / schemes"@en;
   skos:topConceptOf <https://vocabs.lter-europe.net/so/> .
 <http://vocabs.lter-europe.net/so/>
-	 rdf:type owl:Ontology .
+   rdf:type skos:ConceptScheme
+   rdf:type owl:Ontology .
