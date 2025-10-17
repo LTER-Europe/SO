@@ -96,22 +96,54 @@ jobs:
         id: metadata
         env:
           FILE_NAME: ${{secrets.FILE_NAME}}
+          VOCAB_TYPE: ${{ env.VOCAB_TYPE }}
         run: |
-          echo "🔍 Extracting creators, contributors, and license from TTL..."
+          echo "🔍 Extracting metadata from main ConceptScheme block in TTL..."
 
-          # Extract creators (URIs or literals)
-          CREATORS=$(grep -oP '(?<=dct:creator\s)[^;]+' $FILE_NAME.ttl | tr -d '<>' | tr '\n' ',' | sed 's/,$//')
+          VOCAB_LOWER=$(echo "$VOCAB_TYPE" | tr '[:upper:]' '[:lower:]')
+          TTL_FILE="$FILE_NAME.ttl"
 
-          # Extract contributors (URIs or literals)
-          CONTRIBUTORS=$(grep -oP '(?<=dct:contributor\s)[^;]+' $FILE_NAME.ttl | tr -d '<>' | tr '\n' ',' | sed 's/,$//')
+          if [ ! -f "$TTL_FILE" ]; then
+            echo "❌ TTL file not found: $TTL_FILE"
+            exit 1
+          fi
 
-          # Extract license (URI or literal)
-          LICENSE=$(grep -oP '(?<=dct:license\s)[^;]+' $FILE_NAME.ttl | tr -d '<>' | head -n 1)
+          # Extract the main ConceptScheme block (from its URI until the first terminating dot)
+          awk "/<http:\\/\\/vocabs\\.lter-europe\\.net\\/${VOCAB_LOWER}\\/>\s*a skos:ConceptScheme;/,/^\\s*\\.\\s*$/" "$TTL_FILE" > conceptscheme_block.ttl
 
-          echo "🧾 Found creators: $CREATORS"
-          echo "🧾 Found contributors: $CONTRIBUTORS"
-          echo "🧾 Found license: $LICENSE"
+          if [ ! -s conceptscheme_block.ttl ]; then
+            echo "⚠️ ConceptScheme block not found for ${VOCAB_TYPE} — skipping metadata extraction."
+            echo "creators=" >> $GITHUB_OUTPUT
+            echo "contributors=" >> $GITHUB_OUTPUT
+            echo "license=" >> $GITHUB_OUTPUT
+            exit 0
+          fi
 
+          # Extract RDF values (creators, contributors, license) from the isolated block
+          CREATORS=$(grep -oP '(?<=dct:creator\s)[^;]+' conceptscheme_block.ttl | tr -d '<>' | tr '\n' ',' | sed 's/,$//')
+          CONTRIBUTORS=$(grep -oP '(?<=dct:contributor\s)[^;]+' conceptscheme_block.ttl | tr -d '<>' | tr '\n' ',' | sed 's/,$//')
+          LICENSE=$(grep -oP '(?<=dct:license\s)[^;]+' conceptscheme_block.ttl | tr -d '<>' | head -n 1)
+
+          # Check if metadata values were found and print log feedback
+          if [ -z "$CREATORS" ]; then
+            echo "⚠️ No dct:creator found in ConceptScheme block."
+          else
+            echo "🧾 Found creators: $CREATORS"
+          fi
+
+          if [ -z "$CONTRIBUTORS" ]; then
+            echo "⚠️ No dct:contributor found in ConceptScheme block."
+          else
+            echo "🧾 Found contributors: $CONTRIBUTORS"
+          fi
+
+          if [ -z "$LICENSE" ]; then
+            echo "⚠️ No dct:license found in ConceptScheme block."
+          else
+            echo "🧾 Found license: $LICENSE"
+          fi
+
+          # Export metadata as GitHub Action outputs for use in subsequent steps (release, etc.)
           echo "creators=$CREATORS" >> $GITHUB_OUTPUT
           echo "contributors=$CONTRIBUTORS" >> $GITHUB_OUTPUT
           echo "license=$LICENSE" >> $GITHUB_OUTPUT
