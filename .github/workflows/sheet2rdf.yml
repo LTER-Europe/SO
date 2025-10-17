@@ -109,7 +109,7 @@ jobs:
           fi
 
           # Extract the main ConceptScheme block (from its URI until the first terminating dot)
-          awk "/<http:\\/\\/vocabs\\.lter-europe\\.net\\/${VOCAB_LOWER}\\/>\s*a skos:ConceptScheme;/,/^\\s*\\.\\s*$/" "$TTL_FILE" > conceptscheme_block.ttl
+          awk "/<http:\\/\\/vocabs\\.lter-europe\\.net\\/${VOCAB_LOWER}\\/>\s*a skos:ConceptScheme;/,/^\\s*\\.\\s*$/{print} /^\s*\.\s*$/{exit}" "$TTL_FILE" > conceptscheme_block.ttl
 
           if [ ! -s conceptscheme_block.ttl ]; then
             echo "⚠️ ConceptScheme block not found for ${VOCAB_TYPE} — skipping metadata extraction."
