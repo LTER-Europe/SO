@@ -3,11 +3,16 @@ description: Ask a question or discuss a term
 labels: ["clarification"]
 assignees:
   - OggioniAle
+  - mabablue
 body:
   - type: markdown
     attributes:
       value: |
         Use this template if you want to ask a question or suggest clarification about a term.
+    ---
+        **Maintainers for clarification or comment:**
+        - [@OggioniAle](https://github.com/OggioniAle)
+        - [@mabablue](https://github.com/mabablue)
   - type: input
     id: term
     attributes:
