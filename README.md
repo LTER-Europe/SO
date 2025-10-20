@@ -52,3 +52,40 @@ If you wish to propose new terms or suggest modifications to existing ones:
 - Consult the project [Wiki page](https://github.com/LTER-Europe/EnvThes/wiki) for detailed instructions
 
 EnvThes is licensed under [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/).
+
+---
+
+## 🧩 Configuring *sheet2rdf*
+
+If you want to use **sheet2rdf** in your own work, follow these steps to configure it for your vocabulary repository:
+
+1. Generate a [Google API key](https://developers.google.com/sheets/api/guides/authorizing#APIKey) with read-only access to Google Sheets.  
+2. Create the following [**GitHub Secrets**](https://docs.github.com/en/actions/security-guides/encrypted-secrets):
+
+| Secret | Explanation | Example configuration for *EnvThes* |
+|--------|--------------|--------------------------------------|
+| `FILE_NAME` | Base name used for the generated `.ttl`, `.xlsx`, and `.csv` files | `SOs` |
+| `SHEET_ID` | Unique ID of the Google Sheet to be fetched | [1kf-ZDub9sLCY_vypolQFs_JNceyPFYi56vox4mo_nYw](https://docs.google.com/spreadsheets/d/1kf-ZDub9sLCY_vypolQFs_JNceyPFYi56vox4mo_nYw/edit?gid=1453717173#gid=1453717173) |
+| `GOOGLE_API_KEY` | Google API key with read access to the spreadsheet | `AIza...` |
+
+The workflow will automatically:
+- Fetch the content of the tab defined by `SHEET_TAB_NAME` (in this case `EnvThes`)  
+- Convert it into `.xlsx`, `.csv`, and `.ttl` formats  
+- Commit the generated files and logs to this repository  
+- Create a new tagged release with extracted FAIR metadata and license information
+
+---
+
+## 🧭 Acknowledgements
+
+This work builds on the efforts of the [eLTER-RI](https://elter-ri.eu/) communities, with support from multiple projects contributing to the development of interoperable and FAIR semantic resources for environmental research infrastructures.
+
+---
+
+## 💡 Related vocabularies
+
+| Vocabulary | Description | Access |
+|-------------|--------------|--------|
+| **[SO – Standard Observations](https://github.com/LTER-Europe/SO)** | Controlled vocabulary describing eLTER Standard Observations (SOs) variables, methods, and protocols | [View in Skosmos](https://vocabs.lter-europe.net/so/en/) |
+| **[CL – Controlled Lists](https://github.com/LTER-Europe/eLTER_CL)** | Standardised lists of values used across eLTER metadata systems | [View in Skosmos](https://vocabs.lter-europe.net/cl/en/) |
+| **[EnvThes – Environmental Thesaurus](https://github.com/LTER-Europe/EnvThes)** | Common semantic framework for environmental parameters and concepts | [View in Skosmos](https://vocabs.lter-europe.net/envthes/en/) |
