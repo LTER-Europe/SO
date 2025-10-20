@@ -8,10 +8,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for contributing! Please provide the details of your new term proposal below.
-
+        ✏️ Thank you for contributing! Please provide the details of your new term proposal below.
         ---
-        **Maintainers reviewing new term proposals:**
+        👥 **Maintainers reviewing new term proposals:**
         - [@OggioniAle](https://github.com/OggioniAle)
         - [@mabablue](https://github.com/mabablue)
   - type: input
