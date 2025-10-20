@@ -51,7 +51,7 @@ If you wish to propose new terms or suggest modifications to existing ones:
 - Open a new [issue](https://github.com/LTER-Europe/EnvThes/issues) describing your proposal  
 - Consult the project [Wiki page](https://github.com/LTER-Europe/EnvThes/wiki) for detailed instructions
 
-EnvThes is licensed under [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/).
+SOs vocabulary is licensed under [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/).
 
 ---
 
