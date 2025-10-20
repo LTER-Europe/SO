@@ -9,9 +9,7 @@ body:
     attributes:
       value: |
         ✏️ **Modification request**
-
         Please describe your proposed modification below. Include as much detail as possible.
-
         ---
         👥 **Maintainers reviewing modification proposals:**
         - [@OggioniAle](https://github.com/OggioniAle)
