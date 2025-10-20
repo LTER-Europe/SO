@@ -41,3 +41,14 @@ This workflow extends the original [**excel2rdf**](https://github.com/fair-data-
 | [standard-observations.csv](https://github.com/LTER-Europe/SO/blob/main/standard-observations.csv) | CSV export of the vocabulary |
 | [logs/](https://github.com/LTER-Europe/SO/tree/main/logs) | Conversion logs produced during RDF generation |
 | [.github/workflows/sheet2rdf.yml](https://github.com/LTER-Europe/SO/blob/main/.github/workflows/sheet2rdf.yml) | GitHub Action workflow automating the FAIR publication process |
+---
+
+## 💬 Contributing
+
+If you wish to propose new terms or suggest modifications to existing ones:
+
+- Please create a [GitHub account](https://github.com/signup)  
+- Open a new [issue](https://github.com/LTER-Europe/EnvThes/issues) describing your proposal  
+- Consult the project [Wiki page](https://github.com/LTER-Europe/EnvThes/wiki) for detailed instructions
+
+EnvThes is licensed under [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/).
