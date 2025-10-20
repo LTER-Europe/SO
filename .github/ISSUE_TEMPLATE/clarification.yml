@@ -9,7 +9,7 @@ body:
     attributes:
       value: |
         Use this template if you want to ask a question or suggest clarification about a term.
-    ---
+        ---
         **Maintainers for clarification or comment:**
         - [@OggioniAle](https://github.com/OggioniAle)
         - [@mabablue](https://github.com/mabablue)
