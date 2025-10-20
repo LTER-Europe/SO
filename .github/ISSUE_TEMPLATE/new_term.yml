@@ -2,7 +2,8 @@ name: 🆕 New term proposal
 description: Propose a new term to be added to the eLTER SOs vocabulary
 labels: ["new term"]
 assignees:
-  - OggioniAle
+  - oggioniale
+  - mabablue
 body:
   - type: markdown
     attributes:
