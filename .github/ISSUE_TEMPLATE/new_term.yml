@@ -8,7 +8,10 @@ body:
   - type: markdown
     attributes:
       value: |
-        Maintainers reviewing new term proposals:
+        Thank you for contributing! Please provide the details of your new term proposal below.
+
+        ---
+        **Maintainers reviewing new term proposals:**
         - [@OggioniAle](https://github.com/OggioniAle)
         - [@mabablue](https://github.com/mabablue)
   - type: input
