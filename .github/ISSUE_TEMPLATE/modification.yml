@@ -1,0 +1,30 @@
+name: ✏️ Modification of an existing term
+description: Suggest a change or correction to an existing term
+labels: ["modification"]
+assignees:
+  - OggioniAle
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe your proposed modification below. Include as much detail as possible.
+  - type: input
+    id: term
+    attributes:
+      label: Term (prefLabel or URI)
+  - type: textarea
+    id: current
+    attributes:
+      label: Current definition or attributes
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed modification
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason for change
+  - type: textarea
+    id: reference
+    attributes:
+      label: Supporting references or sources (optional)
