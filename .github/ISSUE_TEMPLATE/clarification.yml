@@ -1,0 +1,22 @@
+name: 🧭 Clarification or comment
+description: Ask a question or discuss a term
+labels: ["clarification"]
+assignees:
+  - OggioniAle
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template if you want to ask a question or suggest clarification about a term.
+  - type: input
+    id: term
+    attributes:
+      label: Term (prefLabel or URI)
+  - type: textarea
+    id: question
+    attributes:
+      label: Question or comment
+  - type: textarea
+    id: context
+    attributes:
+      label: Context or example of usage (optional)
