@@ -1,41 +1,41 @@
-ConceptScheme URI,http://vocabs.lter-europe.net/so/
-PREFIX,so,http://vocabs.lter-europe.net/so/
-PREFIX,pav,http://purl.org/pav/
-PREFIX,dct,http://purl.org/dc/terms/
-PREFIX,owl,http://www.w3.org/2002/07/owl#
-PREFIX,xsd,http://www.w3.org/2001/XMLSchema#
-PREFIX,skos,http://www.w3.org/2004/02/skos/core#
-PREFIX,iop,https://w3id.org/iadopt/ont/
-PREFIX,puv,https://w3id.org/env/puv#
-PREFIX,sosa,http://www.w3.org/ns/sosa/
-PREFIX,obo,http://purl.obolibrary.org/obo/
-PREFIX,rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#
-PREFIX,rdfs,http://www.w3.org/2000/01/rdf-schema#
-PREFIX,et,http://vocabs.lter-europe.net/EnvThes/
-PREFIX,qudt,http://qudt.org/vocab/
-PREFIX,omv,http://omv.ontoware.org/2005/05/ontology
-skos:prefLabel,eLTER SOs
-dct:title,eLTER Standard Observations
-dct:description,Thesaurus for eLTER Standard Observations
-dct:creator,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A
-dct:creator,https://orcid.org/0000-0002-7997-219X
-dct:contributor,https://ror.org/013vyke20
-dct:contributor,https://ror.org/04zaypm56
-dct:license,https://creativecommons.org/licenses/by/4.0/
-owl:versionInfo,1.1.3
-dct:created,2023-08-16
-dct:modified,2025-10-16
-owl:ontolgoyIRI,http://vocabs.lter-europe.net/so/
-omv:acronym,SO
-omv:resourceLocator,https://raw.githubusercontent.com/LTER-Europe/SO/main/standard-observations.ttl
-omv:keywords,http://vocabs.lter-europe.net/EnvThes/21672
-dct:publisher,https://ror.org/00pggkr55
-omv:knownUsage,annotation of observation data
-dct:audience,http://schema.org/Researcher
-doap:repository,https://ecoportal.lifewatch.eu/ontologies/
-schema:includedInDataCatalog,https://ecoportal.lifewatch.eu/ontologies/
-dct:language,en
-schema:includedInDataCatalog,https://vocabs.lter-europe.net/en/
+ConceptScheme URI,http://vocabs.lter-europe.net/so/,,,,,,,,,,,,,,,,,,,
+PREFIX,so,http://vocabs.lter-europe.net/so/,,,,,,,,,,,,,,,,,,
+PREFIX,pav,http://purl.org/pav/,,,,,,,,,,,,,,,,,,
+PREFIX,dct,http://purl.org/dc/terms/,,,,,,,,,,,,,,,,,,
+PREFIX,owl,http://www.w3.org/2002/07/owl#,,,,,,,,,,,,,,,,,,
+PREFIX,xsd,http://www.w3.org/2001/XMLSchema#,,,,,,,,,,,,,,,,,,
+PREFIX,skos,http://www.w3.org/2004/02/skos/core#,,,,,,,,,,,,,,,,,,
+PREFIX,iop,https://w3id.org/iadopt/ont/,,,,,,,,,,,,,,,,,,
+PREFIX,puv,https://w3id.org/env/puv#,,,,,,,,,,,,,,,,,,
+PREFIX,sosa,http://www.w3.org/ns/sosa/,,,,,,,,,,,,,,,,,,
+PREFIX,obo,http://purl.obolibrary.org/obo/,,,,,,,,,,,,,,,,,,
+PREFIX,rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#,,,,,,,,,,,,,,,,,,
+PREFIX,rdfs,http://www.w3.org/2000/01/rdf-schema#,,,,,,,,,,,,,,,,,,
+PREFIX,et,http://vocabs.lter-europe.net/EnvThes/,,,,,,,,,,,,,,,,,,
+PREFIX,qudt,http://qudt.org/vocab/,,,,,,,,,,,,,,,,,,
+PREFIX,omv,http://omv.ontoware.org/2005/05/ontology,,,,,,,,,,,,,,,,,,
+skos:prefLabel,eLTER SOs,,,,,,,,,,,,,,,,,,,
+dct:title,eLTER Standard Observations,,,,,,,,,,,,,,,,,,,
+dct:description,Thesaurus for eLTER Standard Observations,,,,,,,,,,,,,,,,,,,
+dct:creator,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,,,,,,,,,,,,,,,,,,,
+dct:creator,https://orcid.org/0000-0002-7997-219X,,,,,,,,,,,,,,,,,,,
+dct:contributor,https://ror.org/013vyke20,,,,,,,,,,,,,,,,,,,
+dct:contributor,https://ror.org/04zaypm56,,,,,,,,,,,,,,,,,,,
+dct:license,https://creativecommons.org/licenses/by/4.0/,,,,,,,,,,,,,,,,,,,
+owl:versionInfo,1.1.3,,,,,,,,,,,,,,,,,,,
+dct:created,2023-08-16,,,,,,,,,,,,,,,,,,,
+dct:modified,2025-10-16,,,,,,,,,,,,,,,,,,,
+owl:ontolgoyIRI,http://vocabs.lter-europe.net/so/,,,,,,,,,,,,,,,,,,,
+omv:acronym,SO,,,,,,,,,,,,,,,,,,,
+omv:resourceLocator,https://raw.githubusercontent.com/LTER-Europe/SO/main/standard-observations.ttl,,,,,,,,,,,,,,,,,,,
+omv:keywords,http://vocabs.lter-europe.net/EnvThes/21672,,,,,,,,,,,,,,,,,,,
+dct:publisher,https://ror.org/00pggkr55,,,,,,,,,,,,,,,,,,,
+omv:knownUsage,annotation of observation data,,,,,,,,,,,,,,,,,,,
+dct:audience,http://schema.org/Researcher,,,,,,,,,,,,,,,,,,,
+doap:repository,https://ecoportal.lifewatch.eu/ontologies/,,,,,,,,,,,,,,,,,,,
+schema:includedInDataCatalog,https://ecoportal.lifewatch.eu/ontologies/,,,,,,,,,,,,,,,,,,,
+dct:language,en,,,,,,,,,,,,,,,,,,,
+schema:includedInDataCatalog,https://vocabs.lter-europe.net/en/,,,,,,,,,,,,,,,,,,,
 Identifier,skos:prefLabel@en,skos:notation,"rdf:type(separator="","")",skos:definition@en,"skos:broader(separator="","")","dct:source(separator="","")",^skos:member,"skos:exactMatch(separator="","")",dct:isReplacedBy,"skos:closeMatch(separator="","")","skos:narrowMatch(separator="","")","skos:related(separator="","")","obo:RO_0002351(separator="","")","skos:broadMatch(separator="","")","owl:sameAs(separator="","")",rdfs:seeAlso,dct:creator,dct:contributor,dct:created^^xsd:date,dct:modified^^xsd:date
 so:027,Meteorological data,SOATM_027,"skos:Concept, iop:VariableSet",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,"https://orcid.org/0000-0003-2195-3997, https://orcid.org/0000-0002-7997-219X",8/16/2023,2025-06-14
 so:028,Radiation,SOATM_028,"skos:Concept, iop:VariableSet",,,,so:c5,,,,,,,,,,http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A,"https://orcid.org/0000-0003-2195-3997, https://orcid.org/0000-0002-7997-219X",2023-08-16,2025-06-14
