@@ -1,6 +1,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix et: <http://vocabs.lter-europe.net/EnvThes/> .
 @prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -107,7 +108,6 @@ obo:RO_0002351
 
 
 <http://vocabs.lter-europe.net/so/> a skos:ConceptScheme;
-  <doap:repository> <https://ecoportal.lifewatch.eu/ontologies/>;
   <http://omv.ontoware.org/2005/05/ontologyacronym> "SO"@en;
   <http://omv.ontoware.org/2005/05/ontologykeywords> et:21672;
   <http://omv.ontoware.org/2005/05/ontologyknownUsage> "annotation of observation data"@en;
@@ -119,550 +119,505 @@ obo:RO_0002351
   dct:description "Thesaurus for eLTER Standard Observations"@en;
   dct:language "en"@en;
   dct:license <https://creativecommons.org/licenses/by/4.0/>;
-  dct:modified "2025-11-04"@en;
+  dct:modified "2025-12-12"@en;
   dct:publisher <https://ror.org/00pggkr55>;
   dct:title "eLTER Standard Observations"@en;
   schema:includedInDataCatalog <https://ecoportal.lifewatch.eu/ontologies/>, <https://vocabs.lter-europe.net/en/>;
+  doap:repository <https://ecoportal.lifewatch.eu/ontologies/>;
   owl:ontolgoyIRI <http://vocabs.lter-europe.net/so/>;
-  owl:versionInfo "1.1.4"@en;
-  skos:hasTopConcept so:001, so:003, so:004, so:005, so:006, so:010, so:011, so:012,
-    so:014, so:015, so:016, so:017, so:018, so:019, so:021, so:022, so:023, so:024, so:025,
-    so:026, so:027, so:028, so:030, so:031, so:032, so:036, so:037, so:040, so:042, so:043,
-    so:044, so:045, so:048, so:058, so:059, so:062, so:064, so:090, so:091, so:092, so:095,
-    so:096, so:098, so:103, so:108, so:114, so:140, so:155, so:164, so:165, so:166, so:167,
-    so:168, so:169, so:170, so:171, so:172, so:173, so:174, so:176, so:177, so:183, so:184;
+  owl:versionInfo "1.1.5"@en;
+  skos:hasTopConcept so:c1, so:c2, so:c3, so:c4, so:c5;
   skos:prefLabel "eLTER SOs"@en .
 
 so:027 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
-  dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-06-14"^^xsd:date;
-  skos:inScheme <http://vocabs.lter-europe.net/so/>;
-  skos:notation "SOATM_027"@en;
-  skos:prefLabel "Meteorological data"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
-
-so:c5 a skos:Collection;
-  dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2024-06-24"^^xsd:date;
-  skos:exactMatch et:21920;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c5;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
-  skos:member so:015, so:016, so:023, so:024, so:025, so:026, so:027, so:028, so:090,
-    so:091, so:092, so:095, so:098, so:103, so:108, so:140, so:176, so:177;
-  skos:prefLabel "Atmosphere"@en .
+  skos:notation "SOATM_027"@en;
+  skos:prefLabel "Meteorological data"@en .
 
 so:028 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-06-14"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c5;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOATM_028"@en;
-  skos:prefLabel "Radiation"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Radiation"@en .
 
 so:098 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2024-06-24"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c5;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOATM_098"@en;
-  skos:prefLabel "Soil heat flux"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Soil heat flux"@en .
 
 so:103 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c5;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOATM_103"@en;
-  skos:prefLabel "Atmospheric deposition in precipitation"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Atmospheric deposition in precipitation"@en .
 
 so:108 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c5;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOATM_108"@en;
-  skos:prefLabel "Dry deposition of N-components"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Dry deposition of N-components"@en .
 
 so:176 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-10-13"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c5;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOATM_176"@en;
-  skos:prefLabel "Eddy Covariance (CO2 flux and concentration, Latent heat flux, Sensible heat flux)"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Eddy Covariance (CO2 flux and concentration, Latent heat flux, Sensible heat flux)"@en .
 
 so:014 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c4;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOBIO_014"@en;
-  skos:prefLabel "Flying insects"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
-
-so:c4 a skos:Collection;
-  dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
-  dct:created "2023-08-16"^^xsd:date;
-  dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
-  skos:exactMatch et:21921;
-  skos:inScheme <http://vocabs.lter-europe.net/so/>;
-  skos:member so:014, so:017, so:018, so:019, so:021, so:022, so:096;
-  skos:prefLabel "Biosphere"@en .
+  skos:prefLabel "Flying insects"@en .
 
 so:015 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-10-13"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c5;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOBIO_015"@en;
-  skos:prefLabel "Vegetation phenology and Leaf Area Index - European scale"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Vegetation phenology and Leaf Area Index - European scale"@en .
 
 so:016 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-10-13"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c5;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOBIO_016"@en;
-  skos:prefLabel "Vegetation phenology - site scale"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Vegetation phenology - site scale"@en .
 
 so:017 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c4;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOBIO_017"@en;
-  skos:prefLabel "Vegetation composition (mainly species level+abundance)"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Vegetation composition (mainly species level+abundance)"@en .
 
 so:018 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c4;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOBIO_018"@en;
-  skos:prefLabel "Birds, bats, frogs, insects using acoustic recording"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Birds, bats, frogs, insects using acoustic recording"@en .
 
 so:019 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c4;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOBIO_019"@en;
-  skos:prefLabel "Pollen and spores"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Pollen and spores"@en .
 
 so:021 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-10-15"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c4;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOBIO_021"@en;
-  skos:prefLabel "eDNA Water"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "eDNA Water"@en .
 
 so:022 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-10-15"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c4;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOBIO_022"@en;
-  skos:prefLabel "eDNA soil"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "eDNA soil"@en .
 
 so:023 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-06-06"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c5;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOATM_023"@en;
-  skos:prefLabel "Vegetation aboveground biomass - forest (site scale)"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Vegetation aboveground biomass - forest (site scale)"@en .
 
 so:024 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-10-13"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c5;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOATM_024"@en;
-  skos:prefLabel "Vegetation aboveground biomass - non-forested sites"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Vegetation aboveground biomass - non-forested sites"@en .
 
 so:025 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-06-06"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c5;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOATM_025"@en;
-  skos:prefLabel "Leaf area index - forests (site scale)"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Leaf area index - forests (site scale)"@en .
 
 so:026 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-10-13"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c5;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOATM_026"@en;
-  skos:prefLabel "Leaf area index - non-forested sites"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Leaf area index - non-forested sites"@en .
 
 so:090 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-06-06"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c5;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOATM_090"@en;
-  skos:prefLabel "Gross primary production"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Gross primary production"@en .
 
 so:091 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-06-06"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c5;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOATM_091"@en;
-  skos:prefLabel "Transpiration (plants)"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Transpiration (plants)"@en .
 
 so:092 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-06-06"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c5;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOATM_092"@en;
-  skos:prefLabel "Aboveground litterfall - forests"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Aboveground litterfall - forests"@en .
 
 so:095 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-06-06"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c5;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOATM_095"@en;
-  skos:prefLabel "Leaf C, N, K, P, Ca, Mg, Mn content - terrestrial"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Leaf C, N, K, P, Ca, Mg, Mn content - terrestrial"@en .
 
 so:096 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c4;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOBIO_096"@en;
-  skos:prefLabel "Clorophyll a (benthic, pelagic) - standing, running waters"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Clorophyll a (benthic, pelagic) - standing, running waters"@en .
 
 so:140 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-06-06"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c5;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOATM_140"@en;
-  skos:prefLabel "Vegetation structure - site scale"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Vegetation structure - site scale"@en .
 
 so:177 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-06-06"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c5;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOATM_177"@en;
-  skos:prefLabel "Tree growth"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Tree growth"@en .
 
 so:003 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c2;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOGEO_003"@en;
-  skos:prefLabel "Soil chemical and physical characteristics"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
-
-so:c2 a skos:Collection;
-  dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
-  dct:created "2023-08-16"^^xsd:date;
-  dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
-  skos:exactMatch et:30316;
-  skos:inScheme <http://vocabs.lter-europe.net/so/>;
-  skos:member so:001, so:003, so:048, so:155, so:167;
-  skos:prefLabel "Geosphere"@en .
+  skos:prefLabel "Soil chemical and physical characteristics"@en .
 
 so:048 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c2;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOGEO_048"@en;
-  skos:prefLabel "Percolation/infiltration - soil"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Percolation/infiltration - soil"@en .
 
 so:155 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c2;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOGEO_155"@en;
-  skos:prefLabel "Sediment (aquatic and marine) inventory"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Sediment (aquatic and marine) inventory"@en .
 
 so:167 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c2;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOGEO_167"@en;
-  skos:prefLabel "Soil water chemical characteristics"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Soil water chemical characteristics"@en .
 
 so:004 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_004"@en;
-  skos:prefLabel "Profiles of physical and chemical waters characteristics - surface water (standing)"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
-
-so:c3 a skos:Collection;
-  dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
-  dct:created "2023-08-16"^^xsd:date;
-  dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
-  skos:exactMatch et:21922;
-  skos:inScheme <http://vocabs.lter-europe.net/so/>;
-  skos:member so:004, so:005, so:006, so:010, so:011, so:012, so:058, so:059, so:062,
-    so:064, so:164, so:165, so:166, so:168, so:169, so:170, so:171, so:172, so:173, so:174;
-  skos:prefLabel "Hydrosphere"@en .
+  skos:prefLabel "Profiles of physical and chemical waters characteristics - surface water (standing)"@en .
 
 so:005 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_005"@en;
-  skos:prefLabel "Physical and chemical water characteristics - surface water (running waters)"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Physical and chemical water characteristics - surface water (running waters)"@en .
 
 so:006 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_006"@en;
-  skos:prefLabel "Physical and chemical water characteristics - groundwater"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Physical and chemical water characteristics - groundwater"@en .
 
 so:010 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_010"@en;
-  skos:prefLabel "Water level - surface water (running water)"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Water level - surface water (running water)"@en .
 
 so:011 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_011"@en;
-  skos:prefLabel "Ice cover/thickness (standing and transitional water)"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Ice cover/thickness (standing and transitional water)"@en .
 
 so:012 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_012"@en;
-  skos:prefLabel "Snow cover and depths"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Snow cover and depths"@en .
 
 so:058 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-06-13"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_058"@en;
-  skos:prefLabel "Stable isotopes (18O, 2H) - standing, running waters"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Stable isotopes (18O, 2H) - standing, running waters"@en .
 
 so:059 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_059"@en;
-  skos:prefLabel "Stable Isotopes (18O, 2H) - groundwater"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Stable Isotopes (18O, 2H) - groundwater"@en .
 
 so:062 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-10-13"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_062"@en;
-  skos:prefLabel "Major ion concentrations: Cl, SO4, Br, Na, K, Mg, Ca, B - groundwater"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Major ion concentrations: Cl, SO4, Br, Na, K, Mg, Ca, B - groundwater"@en .
 
 so:064 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_064"@en;
-  skos:prefLabel "Nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4, DOC, DIC - groundwater"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4, DOC, DIC - groundwater"@en .
 
 so:164 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_164"@en;
-  skos:prefLabel "Glacier front variation"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Glacier front variation"@en .
 
 so:165 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2024-07-07"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_165"@en;
-  skos:prefLabel "Glacier mass balance"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Glacier mass balance"@en .
 
 so:166 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2023-08-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_166"@en;
-  skos:prefLabel "Glacier area"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Glacier area"@en .
 
 so:168 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2024-06-24"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_168"@en;
-  skos:prefLabel "Soil water content, soil temperature"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Soil water content, soil temperature"@en .
 
 so:169 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-10-13"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_169"@en;
-  skos:prefLabel "Carbon concentration: DOC, DIC - running waters"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Carbon concentration: DOC, DIC - running waters"@en .
 
 so:170 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2024-06-24"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_170"@en;
-  skos:prefLabel "Profiles of nutrient concentration: DOC, DIC - standing waters"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Profiles of nutrient concentration: DOC, DIC - standing waters"@en .
 
 so:171 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-10-13"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_171"@en;
-  skos:prefLabel "Major ion concentrations: Cl, SO4, Br, Na, K, Mg, Ca, B, Silica - running/standing waters"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Major ion concentrations: Cl, SO4, Br, Na, K, Mg, Ca, B, Silica - running/standing waters"@en .
 
 so:172 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-06-06"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_172"@en;
-  skos:prefLabel "Nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4 - running waters"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4 - running waters"@en .
 
 so:173 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-06-06"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_173"@en;
-  skos:prefLabel "Profiles of nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4 - standing waters"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Profiles of nutrient concentration: TP, SRP, TDN, NO3, NO2, NH4 - standing waters"@en .
 
 so:174 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2024-06-24"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c3;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOHYD_174"@en;
-  skos:prefLabel "Secchi-Depth; standing waters and transitional waters"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Secchi-Depth; standing waters and transitional waters"@en .
 
 so:001 a skos:Concept, iop:VariableSet;
   obo:RO_0002351 et:22065, et:22245, et:22264, et:22279, et:30067, et:30319, et:30321,
@@ -670,149 +625,204 @@ so:001 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2024-01-09"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c2;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOGEO_001"@en;
-  skos:prefLabel "Soil inventory - pedological/geological characterization"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Soil inventory - pedological/geological characterization"@en .
 
-so:c1 a skos:Collection;
+so:c1 a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2023-08-16"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2024-06-24"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
   skos:exactMatch et:30317;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
-  skos:member so:030, so:031, so:032, so:036, so:037, so:040, so:042, so:043, so:044,
+  skos:narrowMatch so:030, so:031, so:032, so:036, so:037, so:040, so:042, so:043, so:044,
     so:045, so:114, so:183, so:184;
-  skos:prefLabel "Sociosphere"@en .
+  skos:narrower so:030, so:031, so:032, so:036, so:037, so:040, so:042, so:043, so:044,
+    so:045, so:114, so:183, so:184;
+  skos:prefLabel "Sociosphere"@en;
+  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+
+so:c2 a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
+  dct:created "2023-08-16"^^xsd:date;
+  dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:exactMatch et:30316;
+  skos:inScheme <http://vocabs.lter-europe.net/so/>;
+  skos:narrowMatch so:001, so:003, so:048, so:155, so:167;
+  skos:narrower so:001, so:003, so:048, so:155, so:167;
+  skos:prefLabel "Geosphere"@en;
+  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+
+so:c3 a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
+  dct:created "2023-08-16"^^xsd:date;
+  dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:exactMatch et:21922;
+  skos:inScheme <http://vocabs.lter-europe.net/so/>;
+  skos:narrowMatch so:004, so:005, so:006, so:010, so:011, so:012, so:058, so:059, so:062,
+    so:064, so:164, so:165, so:166, so:168, so:169, so:170, so:171, so:172, so:173, so:174;
+  skos:narrower so:004, so:005, so:006, so:010, so:011, so:012, so:058, so:059, so:062,
+    so:064, so:164, so:165, so:166, so:168, so:169, so:170, so:171, so:172, so:173, so:174;
+  skos:prefLabel "Hydrosphere"@en;
+  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+
+so:c4 a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
+  dct:created "2023-08-16"^^xsd:date;
+  dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:exactMatch et:21921;
+  skos:inScheme <http://vocabs.lter-europe.net/so/>;
+  skos:narrowMatch so:014, so:017, so:018, so:019, so:021, so:022, so:096;
+  skos:narrower so:014, so:017, so:018, so:019, so:021, so:022, so:096;
+  skos:prefLabel "Biosphere"@en;
+  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+
+so:c5 a skos:Concept;
+  dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
+  dct:created "2023-08-16"^^xsd:date;
+  dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:exactMatch et:21920;
+  skos:inScheme <http://vocabs.lter-europe.net/so/>;
+  skos:narrowMatch so:015, so:016, so:023, so:024, so:025, so:026, so:027, so:028, so:090,
+    so:091, so:092, so:095, so:098, so:103, so:108, so:140, so:176, so:177;
+  skos:narrower so:015, so:016, so:023, so:024, so:025, so:026, so:027, so:028, so:090,
+    so:091, so:092, so:095, so:098, so:103, so:108, so:140, so:176, so:177;
+  skos:prefLabel "Atmosphere"@en;
+  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
 
 so:031 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-06-13"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c1;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOSOC_031"@en;
-  skos:prefLabel "Yield (cropland, grassland, forest, fishery)"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Yield (cropland, grassland, forest, fishery)"@en .
 
 so:030 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-06-13"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c1;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOSOC_030"@en;
-  skos:prefLabel "Land-based income"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Land-based income"@en .
 
 so:114 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2024-06-24"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c1;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOSOC_114"@en;
-  skos:prefLabel "Livestock"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Livestock"@en .
 
 so:032 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2024-06-24"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c1;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOSOC_032"@en;
-  skos:prefLabel "Governance structure and character"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Governance structure and character"@en .
 
 so:036 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-05-23"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c1;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOSOC_036"@en;
-  skos:prefLabel "Land cover, land use, land cover change, land use change - CORINE"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Land cover, land use, land cover change, land use change - CORINE"@en .
 
 so:037 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-10-13"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c1;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOSOC_037"@en;
-  skos:prefLabel "Land cover, land use, land cover change, land use change (Statistics)"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Land cover, land use, land cover change, land use change (Statistics)"@en .
 
 so:040 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2024-06-24"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c1;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOSOC_040"@en;
-  skos:prefLabel "Ecosystem services profile"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Ecosystem services profile"@en .
 
 so:042 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2024-06-24"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c1;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOSOC_042"@en;
-  skos:prefLabel "Economics (GDP per capita; Per capita income)"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Economics (GDP per capita; Per capita income)"@en .
 
 so:043 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2024-06-24"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c1;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOSOC_043"@en;
-  skos:prefLabel "Demography"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Demography"@en .
 
 so:044 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2024-06-24"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c1;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOSOC_044"@en;
-  skos:prefLabel "Status of employment"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Status of employment"@en .
 
 so:045 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2024-06-24"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c1;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOSOC_045"@en;
-  skos:prefLabel "Population consumption statistics"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Population consumption statistics"@en .
 
 so:183 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-10-13"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c1;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOSOC_183"@en;
-  skos:prefLabel "Resource use"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Resource use"@en .
 
 so:184 a skos:Concept, iop:VariableSet;
   dct:contributor <https://orcid.org/0000-0002-7997-219X>, <https://orcid.org/0000-0003-2195-3997>;
   dct:created "2024-06-24"^^xsd:date;
   dct:creator <http://purl.org/np/RAjk9ru697It_UawXK1gvq-mpaOdGlwyhNb9nF2tfEE2A>;
-  dct:modified "2025-11-04"^^xsd:date;
+  dct:modified "2025-12-12"^^xsd:date;
+  skos:broader so:c1;
   skos:inScheme <http://vocabs.lter-europe.net/so/>;
   skos:notation "SOSOC_184"@en;
-  skos:prefLabel "Subsidies programs / schemas"@en;
-  skos:topConceptOf <http://vocabs.lter-europe.net/so/> .
+  skos:prefLabel "Subsidies programs / schemas"@en .
